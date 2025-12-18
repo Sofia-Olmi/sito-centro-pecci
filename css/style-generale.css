@@ -1,0 +1,75 @@
+/* STILI TESTO*/
+body{
+    font-family: 'Hanken Grotesk', Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: normal;
+    line-height: 22px; 
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.titolo {
+    font-weight: 800;
+    font-size: 68px;
+    line-height: auto;
+}
+
+.sottotitolo {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: auto;
+}
+
+.titoletto {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: auto;
+}
+
+.voci {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px; 
+}
+
+
+
+
+
+/* COLORI SFONDO*/
+.bg-giallo {
+    background-color: #FFD34D; 
+}
+
+.bg-rosso {
+    background-color: #ef7a61; 
+}
+
+.bg-viola {
+    background-color: #a580b8; 
+}
+
+.bg-verde {
+    background-color: #33af7b; 
+}
+
+.bg-rosa {
+    background-color: #ff8ec8; 
+}
+
+.bg-azzurro {
+    background-color: #89b8cf; 
+}
+
+.bg-grigio {
+    background-color: #eaeaea; 
+}
+
+.bg-bianco {
+    background-color: #ffffff; 
+}
+
+.bg-nero {
+    background-color: #000000; 
+}
