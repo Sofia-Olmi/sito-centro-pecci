@@ -110,7 +110,6 @@ body{
 }
 
 .header .navlist{
-.header .navlist{
     display: flex;
     gap: 50px;
 }
