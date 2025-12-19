@@ -47,7 +47,8 @@ body{
 .voci {
     font-weight: 300;
     font-size: 16px;
-    line-height: 22px; 
+    line-height: 22px;
+    line-height: 22px;
 }
 
 
@@ -108,11 +109,39 @@ body{
     z-index: 1000;
 }
 
-.navlist{
+.header .navlist{
     display: flex;
     gap: 50px;
-    padding: 20px 0;
 }
 
+.header .img-wrapper{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
 
+.header .img-wrapper img{
+    width: 100%;
+    height: auto;
+    /* max-width: 150px; */
+}
 
+.voci-header .navlist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.voci-header .blocco-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elenco-voci{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-decoration: underline;
+}
