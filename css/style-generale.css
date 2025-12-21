@@ -127,6 +127,10 @@ body{
     /* max-width: 150px; */
 }
 
+.menu li{
+    cursor: pointer;
+}
+
 .voci-header .navlist{
     display: flex;
     flex-direction: column;
