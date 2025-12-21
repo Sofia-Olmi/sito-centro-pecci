@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
       vociHeader.classList.add('expanded');
       vociHeader.classList.remove('collapsed');
 
+      // Toggle .selected class on menu items
+      menuItems.forEach(nav => nav.classList.remove('selected'));
+      item.classList.add('selected');
+
       // Fade out currently visible menu
       const visibleUl = Array.from(navLists).find(ul => ul.classList.contains('d-flex') && !ul.classList.contains('d-none'));
       const targetUl = vociHeader.querySelector('ul.' + navClass);
@@ -78,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
         ul.classList.add('d-none');
         ul.classList.remove('d-flex', 'fade-in', 'fade-out');
       });
+      // Remove .selected from all menu items
+      menuItems.forEach(nav => nav.classList.remove('selected'));
     }
   });
 

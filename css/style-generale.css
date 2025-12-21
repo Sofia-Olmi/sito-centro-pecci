@@ -101,7 +101,8 @@ body{
 
 
 
-/* STILE HEADER */
+/* -------------------STILE HEADER---------------------- */
+
 .header {
     position: fixed;
     top: 0;
@@ -129,6 +130,7 @@ body{
 
 .menu li{
     cursor: pointer;
+    position: relative;
 }
 
 .voci-header .navlist{
@@ -148,15 +150,16 @@ body{
     overflow: hidden;
     height: 0;
     opacity: 0;
-    margin: 0;
-    transition: height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
     
 }
 .voci-header.expanded {
     height: 300px; /* Adjust as needed for content */
     opacity: 1;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
 }
 
 .elenco-voci{
@@ -181,4 +184,53 @@ body{
 .voci-header ul[class^="nav-"].fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+/* colore sfondo voci header */
+.voci-header:has(.nav-1.d-flex) {
+    background-color: #ef7a61; 
+}
+.voci-header:has(.nav-2.d-flex) {
+    background-color: #FFD34D; 
+}
+.voci-header:has(.nav-3.d-flex) {
+    background-color: #a580b8; 
+}
+.voci-header:has(.nav-4.d-flex) {
+    background-color: #33af7b; 
+}
+.voci-header:has(.nav-5.d-flex) {
+    background-color: #ff8ec8; 
+}
+
+/* colore pulsanti header*/
+.menu li::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: calc(100% + 10px);
+    transform: translate(-5.5px);
+    height: calc(100% + 5px + 1rem);
+    background-color: transparent;
+    transition: all 0.1s ease 0.2s;
+    z-index: -10;
+}
+.menu .nav-1.selected::after {
+    background-color: #ef7a61;
+}
+.menu .nav-2.selected::after {
+    background-color: #FFD34D;
+}
+.menu .nav-3.selected::after {
+    background-color: #a580b8;
+}
+.menu .nav-4.selected::after {
+    background-color: #33af7b;
+}
+.menu .nav-5.selected::after {
+    background-color: #ff8ec8;
+}
+.menu li:not(.selected)::after{
+    transition: all 0s;
 }
