@@ -213,7 +213,7 @@ body{
     transform: translate(-5.5px);
     height: calc(100% + 5px + 1rem);
     background-color: transparent;
-    transition: all 0.1s ease 0.2s;
+    transition: all 0.2s ease 0.1s;
     z-index: -10;
 }
 .menu .nav-1.selected::after {
@@ -233,4 +233,11 @@ body{
 }
 .menu li:not(.selected)::after{
     transition: all 0s;
+}
+.menu li{
+    color: inherit;
+    transition: color 0.15s 0.15s;
+} 
+.menu li.selected{
+    color: #ffffff;
 }
