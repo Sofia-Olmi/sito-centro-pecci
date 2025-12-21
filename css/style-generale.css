@@ -1,4 +1,4 @@
-/* GENERALI */
+/* ----------------------GENERALI---------------------- */
 body, html{
      margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ a{
 }
 
 
-/* STILI TESTO*/
+/* ----------------------STILI TESTO----------------------*/
 body{
     font-family: 'Hanken Grotesk', Helvetica, Arial, sans-serif;
     color: black;
@@ -52,7 +52,7 @@ body{
 }
 
 
-/* COLORI SFONDO*/
+/* ----------------------COLORI SFONDO----------------------*/
 .bg-giallo {
     background-color: #FFD34D; 
 }
@@ -101,7 +101,7 @@ body{
 
 
 
-/* -------------------STILE HEADER---------------------- */
+/* ----------------------STILE HEADER---------------------- */
 
 .header {
     position: fixed;
