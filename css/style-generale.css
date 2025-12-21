@@ -143,6 +143,18 @@ body{
     gap: 20px;
 }
 
+/* Dropdown transition for voci-header */
+.voci-header {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+.voci-header.expanded {
+    height: 300px; /* Adjust as needed for content */
+    opacity: 1;
+}
+
 .elenco-voci{
     display: flex;
     flex-direction: column;

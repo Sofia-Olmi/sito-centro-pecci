@@ -1,4 +1,4 @@
-// Dropdown header functionality for .voci-header
+// Dropdown header functionality for .voci-header with transition
 
 document.addEventListener('DOMContentLoaded', function () {
   const vociHeader = document.querySelector('.voci-header');
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Collapse .voci-header by default
   if (vociHeader) {
+    vociHeader.classList.remove('expanded');
     vociHeader.classList.add('collapsed');
-    vociHeader.style.display = 'none';
   }
 
   // Show .voci-header and correct menu on menu item click
@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const navClass = Array.from(item.classList).find(cls => cls.startsWith('nav-'));
       if (!navClass || !vociHeader) return;
 
-      // Show header
+      // Expand header
+      vociHeader.classList.add('expanded');
       vociHeader.classList.remove('collapsed');
-      vociHeader.style.display = '';
 
       // Hide all nav-* ul
       navLists.forEach(ul => {
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Collapse .voci-header when clicking outside
   document.addEventListener('click', function (e) {
     if (vociHeader && !vociHeader.contains(e.target)) {
+      vociHeader.classList.remove('expanded');
       vociHeader.classList.add('collapsed');
-      vociHeader.style.display = 'none';
     }
   });
 
