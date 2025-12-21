@@ -234,6 +234,7 @@ body{
 .menu li:not(.selected)::after{
     transition: all 0s;
 }
+/* colore testo pulsanti header  */
 .menu li{
     color: inherit;
     transition: color 0.15s 0.15s;
