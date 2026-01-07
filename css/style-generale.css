@@ -193,6 +193,7 @@ body{
 .chiudi-header svg{
     transition: all 0.2s ease;
     fill: transparent;
+    margin-bottom: -5px;
 }
 .open .chiudi-header svg{
     cursor: pointer;
