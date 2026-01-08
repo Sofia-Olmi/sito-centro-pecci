@@ -1,0 +1,213 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hanken Grotesk', Helvetica, Arial, sans-serif;
+            background-color: #eaeaea;
+            color: black;
+            font-weight: normal;
+            line-height: 22px; 
+            font-size: 18px;
+        }
+
+        .sottotitolo {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 35px;
+        }
+
+        .titoletto {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: auto;
+        }
+
+        .voci {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .slider-container {
+            display: flex;
+            max-width: 100%;
+            background: white;
+            overflow: hidden;
+        }
+
+        .slider-section {
+            position: relative;
+            width: 66.666%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 600px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .dot.active {
+            background: white;
+        }
+
+        /* .nav-arrows {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .arrow {
+            background: rgba(255,255,255,0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 28px;
+            pointer-events: all;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow:hover {
+            background: white;
+        } */
+
+        .text-section {
+            width: 33.333%;
+            padding: 80px 60px;
+            /* background: #e8d5d5; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-content {
+            display: none;
+        }
+
+        .text-content.active {
+            display: block;
+            animation: fadeIn 0.2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* .text-content h2 {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .text-content p {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .text-content .date {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+        } */
+
+        @media (max-width: 992px) {
+            .slider-container {
+                flex-direction: column;
+            }
+            
+            .slider-section, .text-section {
+                width: 100%;
+            }
+            
+            .slide {
+                height: 500px;
+            }
+
+            .text-section {
+                padding: 50px 40px;
+            }
+
+            .text-content h2 {
+                font-size: 38px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .slide {
+                height: 400px;
+            }
+
+            .text-section {
+                padding: 40px 30px;
+            }
+
+            .text-content h2 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .text-content p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 24px;
+            }
+        }
