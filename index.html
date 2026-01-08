@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Pecci</title>
+    <title>Home | Centro Pecci</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style-generale.css">
-    <!-- <link rel="stylesheet" href="XXXX"> DA MODIFICARE -->
+    <link rel="stylesheet" href="css/style-index.css"> 
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,6 +89,120 @@
         </div>
     </div>
 </header>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+    <video width="100%" height="auto" autoplay muted loop controls poster="img/img_index/xxx">
+        <source src="img/img_index/video_centro_pecci.mp4" type="video Centro Pecci">
+    </video>
+</div>
+</div>
+<div class="row">
+    <div class="col-4">
+    <p class="sottotitolo mt-4">LE MOSTRE</p>
+    <p class="mt-2">Scopri tutte le mostre in corso e future <br>al Centro Pecci!</p>
+</div>
+</div>
+    <div class="slider-container">
+        <div class="slider-section">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="img/img_index/vivono.webp" alt="Mostra VIVONO">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1200" alt="Arte Moderna">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=1200" alt="Impressionismo">
+                </div>
+            </div>
+            
+            <!-- <div class="nav-arrows">
+                <button class="arrow" onclick="prevSlide()">‹</button>
+                <button class="arrow" onclick="nextSlide()">›</button>
+            </div> -->
+            
+            <div class="dots" id="dots"></div>
+        </div>
+        
+        <div class="text-section">
+            <div class="text-content active" data-slide="0">
+                <p class="sottotitolo">VIVONO</p>
+                <p>La mostra ricompone la storia dimenticata degli artisti colpiti dall'HIV/AIDS tra il 1982 e il 1996, attraverso opere d'arte, archivi e memorie personali che raccontano come l'amore sia diventato anche azione politica e attivismo.</p>
+                <div class="titoletto">04.10.2025 - 10.05.2026</div>
+            </div>
+            
+            <div class="text-content" data-slide="1">
+                <h2>ARTE MODERNA</h2>
+                <p>Una straordinaria collezione di opere che rappresentano l'evoluzione dell'arte nel ventesimo secolo, esplorando i movimenti che hanno rivoluzionato la percezione estetica contemporanea.</p>
+                <div class="date">15.03.2025 - 20.08.2026</div>
+            </div>
+            
+            <div class="text-content" data-slide="2">
+                <h2>IMPRESSIONISMO</h2>
+                <p>Un viaggio attraverso le opere dei maestri impressionisti, celebrando la luce, il colore e la cattura di momenti fugaci che hanno trasformato la storia dell'arte europea.</p>
+                <div class="date">01.05.2025 - 30.09.2026</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const textContents = document.querySelectorAll('.text-content');
+        const dotsContainer = document.getElementById('dots');
+        const slidesContainer = document.getElementById('slides');
+
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.onclick = () => goToSlide(index);
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlider() {
+            slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+            
+            textContents.forEach((text, index) => {
+                text.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+
+
+
+
+
+</div>
+
+
+
+
+
 <script src="js/script-generale.js"></script>
 </body>
 </html>
