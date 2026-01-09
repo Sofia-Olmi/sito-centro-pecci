@@ -10,3 +10,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.box-sticky {
+    position: sticky;
+    top: 100px;
+}
+
+.puntato {
+    list-style-type: disc;
+    padding-left: 20px;
+}
