@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Pecci</title>
+    <title>Home | Centro Pecci</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style-generale.css">
-    <!-- <link rel="stylesheet" href="XXXX"> DA MODIFICARE -->
+    <link rel="stylesheet" href="css/style-index.css"> 
+
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +16,22 @@
     
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/img_generale/favicon.png">     
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
-<header class="containter-fluid header bg-bianco">
+<header class="container-fluid header bg-bianco">
     <div class="row bg-bianco pb-3">
         <div class="col-2">
             <div class="img-wrapper p-2">
                 <img src="img/img_generale/logo.png" class="img-fluid" alt="Home">
             </div>
         </div>
-        <div class="col-9 offset-1 d-flex align-items-end">
+        <div class="col-8 offset-1 d-flex align-items-end">
             <ul class="navlist menu">
                 <li class="nav-1 titoletto">Cosa fare</li>
                 <li class="nav-2 titoletto">Visita</li>
@@ -34,10 +40,13 @@
                 <li class="nav-5 titoletto">Centro Pecci</li>
             </ul>
         </div>
+        <div class="col-1 d-flex align-items-end chiudi-header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </div>
     </div>
     <div class="row voci-header px-5">
         <div class="col-4">
-            <ul class="nav-1 navlist d-flex">
+            <ul class="nav-1 navlist d-none">
                 <li class="titoletto"><a href="#">Mostre</a></li>
                 <li class="titoletto"><a href="#">Cinema</a></li>
                 <li class="titoletto"><a href="#">Eventi</a></li>
@@ -89,6 +98,61 @@
         </div>
     </div>
 </header>
+
+<!-- VIDEO HERO - FUORI DAL CONTAINER -->
+<section class="video-section">
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="img/img_index/video-centro-pecci.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- CONTENUTO PRINCIPALE -->
+<div class="container-fluid">
+    <!-- TESTO MOSTRE -->
+    <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4">
+            <p class="sottotitolo">LE MOSTRE</p>
+            <p class="mt-2">Scopri tutte le mostre in corso e future <br>al Centro Pecci!</p>
+        </div>
+    </div>
+
+    <!-- SWIPER SLIDER -->
+    <div class="row mt-4 mb-5">
+        <div class="col-8 px-3">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="img/img_index/vivono.webp" alt="Vivono">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="img/img_index/eccentrica.webp" alt="Eccentrica">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="img/img_index/luigi_ghirri_pagina_generica.webp" alt="Luigi Ghirri">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="img/img_index/vorrei_che_mi_vedeste.webp" alt="Vorrei che mi vedeste">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/script-generale.js"></script>
+<script src="js/script-index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

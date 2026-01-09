@@ -6,7 +6,7 @@
     <title>Educazione | Centro Pecci</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style-generale.css">
-    <link rel="stylesheet" href="XXXX"> <!-- DA MODIFICARE -->
+    <link rel="stylesheet" href="css/style-educazione.css"> <!-- DA MODIFICARE -->
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,15 +14,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="img/img_generale/favicon.png">       
-
+    <link rel="icon" type="image/png" href="img/img_generale/favicon.png">
 </head>
 
 <body>
+    <!-- BANDA -->
+<div class="container-fluid bg-viola  riga1-educazione margine-header">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="titolo">LABORATORI</p>
+                <p class="titoletto">
+                    Scopri tutte le mostre che hanno attraversato il Centro Pecci dalla sua fondazione ad oggi. 
+                    Un archivio che documenta oltre trent'anni di arte contemporanea, dalle grandi retrospettive alle ricerche più sperimentali.
+                </p>
+            </div>
+            <div class="col-md-3 offset-md-2 text-center">
+                <img src="img/img_educazione/laboratori-07.svg" class="img-fluid icona-educazione" alt="icona educazione">
+            </div>
+        </div>
+        <div class="row">
+            <div class="box-ricerca">
+                <form>
+                    <select id="auto" name="auto">
+                        <option value="scuole">Scuole</option>
+                        <option value="uni">Università e Accademie</option>
+                        <option value="famiglie">Famiglie</option>
+                        <option value="giovani">Giovani adulti</option>
+                    </select>
+                </form>
+                <button type="button" class="btn btn-primary btn-cerca-educazione">Cerca</button>
+            </div>
+        </div>
+</div>
 
-<script src="js/script-generale.js">
+<!-- SEZIONE LABORATORI  -->
+ <div class="mx-5">
+ <div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+                <div class="card-mostra scuole">
+                    <div class="img-mostra">
+                        <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
+                    </div>
+                    <div class="info-mostra">
+                        <h3 class="sottotitolo">RI-PENSARE LA SCULTURA DI MAURO STACCIOLI</h3>
+                        <p class="testo">
+                            La grande scultura Prato 88, concepita come un arco slanciato dall’orizzonte che ne taglia la coda fino al 
+                            cielo dove svetta la sua punta.
+                        </p>
+                        <p class="bottone-scopridipiù mt-4 mb-4">
+                        <a href="#">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card-mostra uni">
+                    <div class="img-mostra">
+                        <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
+                    </div>
+                    <div class="info-mostra">
+                        <h3 class="sottotitolo">RI-PENSARE LA SCULTURA DI MAURO STACCIOLI</h3>
+                        <p class="testo">
+                            La grande scultura Prato 88, concepita come un arco slanciato dall’orizzonte che ne taglia la coda fino al 
+                            cielo dove svetta la sua punta.
+                        </p>
+                        <p class="bottone-scopridipiù mt-4 mb-4">
+                        <a href="#">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card-mostra famiglie">
+                    <div class="img-mostra">
+                        <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
+                    </div>
+                    <div class="info-mostra">
+                        <h3 class="sottotitolo">RI-PENSARE LA SCULTURA DI MAURO STACCIOLI</h3>
+                        <p class="testo">
+                            La grande scultura Prato 88, concepita come un arco slanciato dall’orizzonte che ne taglia la coda fino al 
+                            cielo dove svetta la sua punta.
+                        </p>
+                        <p class="bottone-scopridipiù mt-4 mb-4">
+                        <a href="#">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card-mostra giovani">
+                    <div class="img-mostra">
+                        <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
+                    </div>
+                    <div class="info-mostra">
+                        <h3 class="sottotitolo">RI-PENSARE LA SCULTURA DI MAURO STACCIOLI</h3>
+                        <p class="testo">
+                            La grande scultura Prato 88, concepita come un arco slanciato dall’orizzonte che ne taglia la coda fino al 
+                            cielo dove svetta la sua punta.
+                        </p>
+                        <p class="bottone-scopridipiù mt-4 mb-4">
+                        <a href="#">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
 
-</script>
-
+    </div>
+ </div>
+ </div>
+<script src="js/script-generale.js"></script>
+<script src="js/script-educazione.js"></script>
 </body>
 </html>

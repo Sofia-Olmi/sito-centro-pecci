@@ -19,8 +19,9 @@
 </head>
 
 <body>
+
 <!-- HEADER -->
-<header class="containter-fluid header bg-bianco">
+<header class="containter-fluid d-none d-xl-block header bg-bianco">
     <div class="row bg-bianco pb-3">
         <div class="col-2">
             <div class="img-wrapper p-2">
@@ -84,6 +85,22 @@
                 <p>+39 0574 5317<br>
                 info@centropecci.it</p>
             </div>
+            
+            <!-- Icone social header -->
+            <div class="social-icons-header">
+                <a href="https://www.facebook.com/CentroPecciPrato" target="_blank" class="social-link-header">
+                    <img src="img/img_generale/icone header/icons8-facebook (1).svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/centropecci/" target="_blank" class="social-link-header">
+                    <img src="img/img_generale/icone header/icons8-instagram (1).svg" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/company/centroperlartecontemporanealuigipecci/" target="_blank" class="social-link-header">
+                    <img src="img/img_generale/icone header/icons8-linkedin (1).svg" alt="linkedin">
+                </a>
+                <a href="https://www.youtube.com/centropecci" target="_blank" class="social-link-header">
+                    <img src="img/img_generale/icone header/icons8-youtube (1).svg" alt="YouTube">
+                </a>
+            </div>
         </div>
         <div class="offset-1 col-3">
             <ul class="elenco-voci">
@@ -94,6 +111,64 @@
         </div>
     </div>
 </header>
+
+</div>
+        <div class="offset-1 col-3">
+            <ul class="elenco-voci">
+                <li class="voci"><a href="#">Amministrazione</a></li>
+                <li class="voci"><a href="#">Maggiori informazioni</a></li>
+                <li class="voci"><a href="#">Affiliati</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- ACCORDIAN -->
+
+ <div class="d-flex d-xl-none align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example w-100">
+            
+<div class="accordion" id="accordionExample1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        Elemento Accordion #1
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
+      <div class="accordion-body">
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        Elemento Accordion #2
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
+      <div class="accordion-body">
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        Elemento Accordion #3
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
+      <div class="accordion-body">
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
 <div class="container-fluid margine-header">
     <div class="row">
         <div class="col-4">
@@ -122,7 +197,7 @@
                     <div class="col-6 offset-2">
                         <p class="sottotitolo">INFO GENERALI</p>
                         <p>Per maggiori informazioni e per prenotazioni contattare il numero:</p>
-                        <a href="tel:+390574531829">+39 0574 531829</a>
+                        <a class="underline" href="tel:+390574531829">+39 0574 531829</a>
                     </div>
                 </div>
                 <div class="row mt-4 mb-5">
@@ -211,18 +286,33 @@
         <p class="mt-2"><a class="voci-link" href="XXX" target=”_blank”>Privacy policy</a><br>
         <a class="voci-link" href="https://www.centropecci.it/" target=”_blank”>Sito precedente</a></p>
         
-        <p class="voci mt-4">Affiliati</p>
-        <p class="mt-2"><a class="voci-link" href="XXX" target=”_blank”>Partner</a><br>
-        <a class="voci-link" href="XXX" target=”_blank”>Ringraziamenti</a><br>
-        <a class="voci-link" href="XXX" target=”_blank”>Sponsor</a></p>
+        <p class="voci mt-4 underline">Affiliati</p>
+        <a class="voci-link underline" href="XXX" target=”_blank”>Ringraziamenti</a><br>
+        <a class="voci-link underline" href="XXX" target=”_blank”>Sponsor</a></p>
     </div>
 
     <div class="col-md-3 offset-md-1 mt-4">
         <p class="voci">Amministrazione</p>
-        <p class="mt-2"><a class="voci-link" href="XXX" target=”_blank”>Il team</a><br>
-        <a class="voci-link" href="XXX" target=”_blank”>Bandi</a><br>
-        <a class="voci-link" href="XXX" target=”_blank”>Opportunità Collaborative</a><br>
-        <a class="voci-link" href="XXX" target=”_blank”>Amministrazione Trasparente</a></p>
+        <p class="mt-2 underline"><a class="voci-link" href="XXX" target=”_blank”>Il Team</a><br>
+        <a class="voci-link underline" href="XXX" target=”_blank”>Bandi</a><br>
+        <a class="voci-link underline" href="XXX" target=”_blank”>Opportunità Collaborative</a><br>
+        <a class="voci-link underline" href="XXX" target=”_blank”>Amministrazione Trasparente</a></p>
+    </div>
+
+    <!-- Icone social -->
+    <div class="social-icons mt-4">
+        <a href="https://www.facebook.com/CentroPecciPrato" target="_blank" class="social-link">
+            <img src="img/img_generale/icone footer/icons8-facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/centropecci/" target="_blank" class="social-link">
+            <img src="img/img_generale/icone footer/icons8-instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/centroperlartecontemporanealuigipecci/" target="_blank" class="social-link">
+            <img src="img/img_generale/icone footer/icons8-linkedin.svg" alt="linkedin">
+        </a>
+        <a href="https://www.youtube.com/centropecci" target="_blank" class="social-link">
+            <img src="img/img_generale/icone footer/icons8-youtube.svg" alt="YouTube">
+        </a>
     </div>
 
 </footer>

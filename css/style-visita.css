@@ -2,3 +2,11 @@
     max-width: 322px;
     height: auto;
 }
+
+.riga1visita {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
