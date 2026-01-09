@@ -42,3 +42,9 @@
     background-color: #a580b8;
     color: #000000;
 }
+
+.box-ricerca{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
