@@ -37,10 +37,11 @@
 }
 
 .testo-cinema{
-    text-decoration: underline;
     line-height: 22px; 
 }
-
+.underline {
+    text-decoration: underline;
+}
 .icona-mostre{
     max-width: 100%;
     width: 322px;
