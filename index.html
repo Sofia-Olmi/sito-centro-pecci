@@ -25,7 +25,7 @@
                 <img src="img/img_generale/logo.png" class="img-fluid" alt="Home">
             </div>
         </div>
-        <div class="col-9 offset-1 d-flex align-items-end">
+        <div class="col-8 offset-1 d-flex align-items-end">
             <ul class="navlist menu">
                 <li class="nav-1 titoletto">Cosa fare</li>
                 <li class="nav-2 titoletto">Visita</li>
@@ -34,10 +34,13 @@
                 <li class="nav-5 titoletto">Centro Pecci</li>
             </ul>
         </div>
+        <div class="col-1 d-flex align-items-end chiudi-header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </div>
     </div>
     <div class="row voci-header px-5">
         <div class="col-4">
-            <ul class="nav-1 navlist d-flex">
+            <ul class="nav-1 navlist d-none">
                 <li class="titoletto"><a href="#">Mostre</a></li>
                 <li class="titoletto"><a href="#">Cinema</a></li>
                 <li class="titoletto"><a href="#">Eventi</a></li>
@@ -89,110 +92,52 @@
         </div>
     </div>
 </header>
-<div class="container-fluid">
-<div class="row">
-<div class="col-12">
-    <video width="100%" height="auto" autoplay muted loop controls poster="img/img_index/xxx">
-        <source src="img/img_index/video_centro_pecci.mp4" type="video Centro Pecci">
-    </video>
-</div>
-</div>
-<div class="row">
-    <div class="col-4">
-    <p class="sottotitolo mt-4">LE MOSTRE</p>
-    <p class="mt-2">Scopri tutte le mostre in corso e future <br>al Centro Pecci!</p>
-</div>
-</div>
-    <div class="slider-container">
-        <div class="slider-section">
-            <div class="slides" id="slides">
-                <div class="slide">
-                    <img src="img/img_index/vivono.webp" alt="Mostra VIVONO">
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1200" alt="Arte Moderna">
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=1200" alt="Impressionismo">
-                </div>
-            </div>
-            
-            <!-- <div class="nav-arrows">
-                <button class="arrow" onclick="prevSlide()">‹</button>
-                <button class="arrow" onclick="nextSlide()">›</button>
-            </div> -->
-            
-            <div class="dots" id="dots"></div>
-        </div>
-        
-        <div class="text-section">
-            <div class="text-content active" data-slide="0">
-                <p class="sottotitolo">VIVONO</p>
-                <p>La mostra ricompone la storia dimenticata degli artisti colpiti dall'HIV/AIDS tra il 1982 e il 1996, attraverso opere d'arte, archivi e memorie personali che raccontano come l'amore sia diventato anche azione politica e attivismo.</p>
-                <div class="titoletto">04.10.2025 - 10.05.2026</div>
-            </div>
-            
-            <div class="text-content" data-slide="1">
-                <h2>ARTE MODERNA</h2>
-                <p>Una straordinaria collezione di opere che rappresentano l'evoluzione dell'arte nel ventesimo secolo, esplorando i movimenti che hanno rivoluzionato la percezione estetica contemporanea.</p>
-                <div class="date">15.03.2025 - 20.08.2026</div>
-            </div>
-            
-            <div class="text-content" data-slide="2">
-                <h2>IMPRESSIONISMO</h2>
-                <p>Un viaggio attraverso le opere dei maestri impressionisti, celebrando la luce, il colore e la cattura di momenti fugaci che hanno trasformato la storia dell'arte europea.</p>
-                <div class="date">01.05.2025 - 30.09.2026</div>
+
+
+<div class="container-fluid p-0">
+    <!-- VIDEO HERO -->
+    <div class="row">
+        <div class="col-12 p-0">
+            <div class="video-container">
+                <video autoplay loop muted playsinline poster="img/perdita_aureola.webp">
+                    <source src="img/img_index/video-centro-pecci.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const textContents = document.querySelectorAll('.text-content');
-        const dotsContainer = document.getElementById('dots');
-        const slidesContainer = document.getElementById('slides');
+    <!-- TESTO MOSTRE -->
+    <div class="row">
+        <div class="col-4">
+            <p class="sottotitolo mt-4">LE MOSTRE</p>
+            <p class="mt-2">Scopri tutte le mostre in corso e future <br>al Centro Pecci!</p>
+        </div>
+    </div>
 
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'dot';
-            if (index === 0) dot.classList.add('active');
-            dot.onclick = () => goToSlide(index);
-            dotsContainer.appendChild(dot);
-        });
-
-        const dots = document.querySelectorAll('.dot');
-
-        function updateSlider() {
-            slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
-            
-            textContents.forEach((text, index) => {
-                text.classList.toggle('active', index === currentSlide);
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlider();
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateSlider();
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlider();
-        }
-
-        setInterval(nextSlide, 5000);
-    </script>
-
+    <!-- SWIPER SLIDER -->
+    <div class="row">
+        <div class="col-12">
+            <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
+                <swiper-slide>
+                    <img src="img/slide1.jpg" alt="Slide 1">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/slide2.jpg" alt="Slide 2">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/slide3.jpg" alt="Slide 3">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/slide4.jpg" alt="Slide 4">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/slide5.jpg" alt="Slide 5">
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+</div>
+    
 
 
 
