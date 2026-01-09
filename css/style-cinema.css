@@ -37,7 +37,6 @@
 }
 
 .testo-cinema{
-    text-decoration: underline;
     line-height: 22px; 
 }
 
@@ -45,4 +44,7 @@
     max-width: 100%;
     width: 220px;
     height: auto;
+}
+.underline {
+    text-decoration: underline;
 }
