@@ -518,6 +518,8 @@ body{
     width: 100%;
     text-align: left;
     transition: color 0.2s;
+    position: relative;
+    z-index: 10;
 }
 
 .accordion-item.nav-1 .accordion-summary {
@@ -559,7 +561,7 @@ body{
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
