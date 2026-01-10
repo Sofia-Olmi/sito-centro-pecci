@@ -106,4 +106,23 @@ document.addEventListener('DOMContentLoaded', function () {
       e.stopPropagation();
     });
   }
+
+  // Accordion functionality for mobile menu - close other items when one is opened
+  const accordionItems = document.querySelectorAll('.accordion-item');
+  accordionItems.forEach(item => {
+    item.open = true; // Set all details to open for CSS animations
+    const summary = item.querySelector('.accordion-summary');
+    summary.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (item.classList.contains('open')) {
+        item.classList.remove('open');
+      } else {
+        // Close other open accordion items
+        accordionItems.forEach(otherItem => {
+          otherItem.classList.remove('open');
+        });
+        item.classList.add('open');
+      }
+    });
+  });
 });

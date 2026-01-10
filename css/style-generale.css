@@ -16,6 +16,13 @@ a{
     color: inherit;
 }
 
+.h-100{
+    height: 100% !important;
+}
+
+.w-100{
+    width: 100% !important;
+}
 
 /* ----------------------STILI TESTO----------------------*/
 body{
@@ -276,6 +283,7 @@ body{
     color: #ffffff;
 }
 
+<<<<<<< Updated upstream
 .social-icons-header {
     display: flex;
     gap: 15px;
@@ -389,6 +397,8 @@ body{
             display: block;
         }
 
+=======
+>>>>>>> Stashed changes
 /* ----------------------STILE FOOTER---------------------- */
 .form-label{
     display: block;
@@ -455,6 +465,7 @@ body{
     text-decoration: underline;
 }
 
+<<<<<<< Updated upstream
 .social-icons {
     display: flex;
     gap: 30px;
@@ -475,3 +486,123 @@ body{
     width: 50px;
     height: 50px;
 }
+=======
+@media (max-width: 1200px) {
+    /* ----------------------STILE ACCORDION---------------------- */
+.accordion {
+    position: fixed;
+    top: -80px;
+    z-index: 1000000000000;
+    width: 100vw;
+    height: calc(100vh + 80px);
+}
+
+.accordion-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(80px);
+}
+
+.accordion-item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.accordion-summary {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: color 0.2s;
+}
+
+.accordion-item.nav-1 .accordion-summary {
+    background-color: #ef7a61;
+    color: #000000;
+}
+
+.accordion-item.nav-2 .accordion-summary {
+    background-color: #FFD34D;
+    color: #000000;
+}
+
+.accordion-item.nav-3 .accordion-summary {
+    background-color: #a580b8;
+    color: #000000;
+}
+
+.accordion-item.nav-4 .accordion-summary {
+    background-color: #33af7b;
+    color: #000000;
+}
+
+.accordion-item.nav-5 .accordion-summary {
+    background-color: #ff8ec8;
+    color: #000000;
+}
+
+.accordion-summary:hover {
+    color: #f0f0f0 !important;
+}
+
+.accordion-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.accordion-content li {
+    padding: 10px 15px;
+    padding-left: 30px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.accordion-content li:last-child {
+    border-bottom: none;
+}
+
+.accordion-content a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-1 .accordion-content a:hover {
+    color: #ef7a61;
+}
+.nav-2 .accordion-content a:hover {
+    color: #FFD34D;
+}
+.nav-3 .accordion-content a:hover {
+    color: #a580b8;
+}
+.nav-4 .accordion-content a:hover {
+    color: #33af7b;
+}
+.nav-5 .accordion-content a:hover {
+    color: #ff8ec8;
+}
+}
+>>>>>>> Stashed changes
