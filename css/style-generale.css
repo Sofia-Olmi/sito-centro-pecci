@@ -562,13 +562,14 @@ body{
     max-height: 0;
     opacity: 0;
     transform: translateY(-5px);
-    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    transition: max-height 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
 }
 
 .accordion-item.open .accordion-content {
     max-height: 500px;
     opacity: 1;
     transform: translateY(0);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .accordion-content li {
