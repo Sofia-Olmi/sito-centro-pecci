@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 0,
         centeredSlides: false,
         loop: true,
+        speed: 800,
         autoplay: {
             delay: 7000,
             disableOnInteraction: false,
@@ -18,4 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('Swiper inizializzato correttamente');
+
+    // Connetti slider verticale a quello orizzontale
+    const wrapper = document.getElementById('verticalSliderWrapper');
+    let currentIndex = 0;
+    wrapper.style.transform = 'translateY(0)';
+
+    swiper.on('slideChange', function() {
+        currentIndex = swiper.realIndex;
+        wrapper.style.transform = `translateY(-${currentIndex * 450}px)`;
+    });
 });

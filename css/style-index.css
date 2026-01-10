@@ -83,7 +83,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: #fff;
+    background: #000;
     opacity: 0.5;
 }
 
@@ -91,6 +91,108 @@ body {
     opacity: 1;
     background: #000;
 }
+
+
+/* SLIDER TESTO */
+        .vertical-slider-container {
+            width: 100%;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+            background: #eaeaea;
+        }
+
+        .vertical-slider-container::before,
+        .vertical-slider-container::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 40px;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .vertical-slider-container::before {
+            top: 0;
+            background: linear-gradient(to bottom,
+                rgba(234, 234, 234, 1) 0%,
+                rgba(234, 234, 234, 0.9) 30%,
+                rgba(234, 234, 234, 0) 100%);
+        }
+
+        .vertical-slider-container::after {
+            bottom: 0;
+            background: linear-gradient(to top,
+                rgba(234, 234, 234, 1) 0%,
+                rgba(234, 234, 234, 0.9) 30%,
+                rgba(234, 234, 234, 0) 100%);
+        }
+
+        .vertical-slider-wrapper {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        .vertical-slide {
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 40px;
+        }
+
+/* STILE SWIPER EVENTI */
+.bg-grigio:has(swiper-container) {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
+
+.slide-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.slide-info {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide-info .underline {
+    margin-top: auto;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

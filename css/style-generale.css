@@ -153,7 +153,7 @@ body{
 .header .img-wrapper img{
     width: auto;
     height: calc(80px - 1rem);
-    /* max-width: 150px; */
+    object-fit: contain;
 }
 
 .menu li{
@@ -207,6 +207,11 @@ body{
     cursor: pointer;
     transform: rotate(90deg);
     fill: #000000;
+}
+
+.hamburger-icon{
+    cursor: pointer;
+    margin-bottom: -12px;
 }
 
 /* Fade transition for nav-* menus under voci-header */
@@ -304,98 +309,6 @@ body{
     height: 30px;
 }
 
-
-/* ACCORDION */
-.h-100{
-    height: 100% !important;
-}
-
-.w-100{
-    width: 100% !important;
-}
-.bd-example {
-            margin-top: 0;
-            border: none;
-            box-shadow: none!important;
-        }
-
-        [class^="border"] {
-            display: inline-block;
-            width: 5rem;
-            height: 5rem;
-            margin: .25rem;
-            background-color: #f5f5f5;
-        }
-
-        .ratio-example {
-            display: inline-flex;
-            justify-content: center;
-            align-content: center;
-            width: 10rem;
-            color: #6c757d;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-        }
-
-        .ratio-example div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .ratio-example-breakpoint {
-            --bs-aspect-ratio: 50%;
-        }
-
-        a.back-to-top {
-            position: relative;
-            bottom: unset;
-            right: unset;
-            visibility: visible;
-            margin: 0 auto;
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .it-carousel-wrapper {
-            width: 96%;
-        }
-
-        .it-header-navbar-wrapper .custom-navbar-toggler .icon.bg-override {
-            fill: #06c;
-            width: 32px;
-            height: 32px;
-        }
-
-        .it-example-modal .modal {
-            position: relative;
-            top: auto;
-            right: auto;
-            bottom: auto;
-            left: auto;
-            z-index: 1;
-            display: block;
-        }
-
-        .test-docs .notification {
-            position: static;
-            top: auto;
-            bottom: auto;
-            right: auto;
-            left: auto;
-            transform: none;
-            display: block;
-        }
-
-        .test-docs .notification.dismissable {
-            position: relative;
-        }
-
-        .test-desktop .notification {
-            position: absolute;
-            display: block;
-        }
-
 /* ----------------------STILE FOOTER---------------------- */
 .form-label{
     display: block;
@@ -484,12 +397,36 @@ body{
 }
 @media (max-width: 1200px) {
     /* ----------------------STILE ACCORDION---------------------- */
+
 .accordion {
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
     top: -80px;
     z-index: 1000000000000;
     width: 100vw;
     height: calc(100vh + 80px);
+    transition: opacity 0.1s ease;
+}
+
+.accordion.open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.chiudi-accordion{
+    position: absolute;
+    top: 110px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 1000000000001;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+.accordion.open .chiudi-accordion{
+    opacity: 1;
 }
 
 .accordion-menu {
@@ -562,13 +499,14 @@ body{
     max-height: 0;
     opacity: 0;
     transform: translateY(-5px);
-    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    transition: max-height 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
 }
 
 .accordion-item.open .accordion-content {
     max-height: 500px;
     opacity: 1;
     transform: translateY(0);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .accordion-content li {
@@ -601,4 +539,33 @@ body{
 .nav-5 .accordion-content a:hover {
     color: #ff8ec8;
 }
+
+summary {
+  list-style: none;
+}
+
+summary::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -6px;
+  margin-right: 8px;
+  margin-bottom: -7px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23000000'%3E%3Cpath d='M480-360 280-560h400L480-360Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg); /* Start rotated left */
+  transition: transform 0.3s;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.accordion-summary:hover::before {
+    filter: invert(1);
+}
+
+details.open summary::before {
+  transform: rotate(0deg); /* Point down when open */
+}
+
 }
