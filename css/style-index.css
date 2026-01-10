@@ -83,7 +83,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: #fff;
+    background: #000;
     opacity: 0.5;
 }
 
@@ -108,7 +108,7 @@ body {
             position: absolute;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 40px;
             pointer-events: none;
             z-index: 2;
         }
@@ -139,9 +139,9 @@ body {
             min-height: 450px;
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
+            justify-content: center;
             align-items: flex-start;
-            padding: 50px 40px;
+            padding: 40px 40px;
         }
 
 /* STILE SWIPER EVENTI */
