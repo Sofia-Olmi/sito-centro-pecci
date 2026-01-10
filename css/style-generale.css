@@ -283,7 +283,6 @@ body{
     color: #ffffff;
 }
 
-<<<<<<< Updated upstream
 .social-icons-header {
     display: flex;
     gap: 15px;
@@ -397,8 +396,6 @@ body{
             display: block;
         }
 
-=======
->>>>>>> Stashed changes
 /* ----------------------STILE FOOTER---------------------- */
 .form-label{
     display: block;
@@ -465,7 +462,6 @@ body{
     text-decoration: underline;
 }
 
-<<<<<<< Updated upstream
 .social-icons {
     display: flex;
     gap: 30px;
@@ -486,7 +482,6 @@ body{
     width: 50px;
     height: 50px;
 }
-=======
 @media (max-width: 1200px) {
     /* ----------------------STILE ACCORDION---------------------- */
 .accordion {
@@ -605,4 +600,3 @@ body{
     color: #ff8ec8;
 }
 }
->>>>>>> Stashed changes
