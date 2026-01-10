@@ -125,4 +125,30 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Add .open class to .accordion when clicking .hamburger-icon
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const accordion = document.querySelector('.accordion');
+  if (hamburgerIcon && accordion) {
+    hamburgerIcon.addEventListener('click', function() {
+      accordion.classList.add('open');
+    });
+  }
+
+  // Remove .open class from .accordion when clicking outside .accordion-item elements (only if it has .open)
+  if (accordion && hamburgerIcon) {
+    document.addEventListener('click', function(e) {
+      const accordionItems = document.querySelectorAll('.accordion-item');
+      let clickedInsideItem = false;
+      accordionItems.forEach(item => {
+        if (item.contains(e.target)) {
+          clickedInsideItem = true;
+        }
+      });
+      // Do not remove if clicked on hamburger icon or inside accordion items
+      if (!clickedInsideItem && !hamburgerIcon.contains(e.target) && accordion.classList.contains('open')) {
+        accordion.classList.remove('open');
+      }
+    });
+  }
 });

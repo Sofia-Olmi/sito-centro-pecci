@@ -153,7 +153,7 @@ body{
 .header .img-wrapper img{
     width: auto;
     height: calc(80px - 1rem);
-    /* max-width: 150px; */
+    object-fit: contain;
 }
 
 .menu li{
@@ -207,6 +207,11 @@ body{
     cursor: pointer;
     transform: rotate(90deg);
     fill: #000000;
+}
+
+.hamburger-icon{
+    cursor: pointer;
+    margin-bottom: -12px;
 }
 
 /* Fade transition for nav-* menus under voci-header */
@@ -393,12 +398,35 @@ body{
 @media (max-width: 1200px) {
     /* ----------------------STILE ACCORDION---------------------- */
 
-    .accordion {
+.accordion {
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
     top: -80px;
     z-index: 1000000000000;
     width: 100vw;
     height: calc(100vh + 80px);
+    transition: opacity 0.1s ease;
+}
+
+.accordion.open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.chiudi-accordion{
+    position: absolute;
+    top: 110px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 1000000000001;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+.accordion.open .chiudi-accordion{
+    opacity: 1;
 }
 
 .accordion-menu {
