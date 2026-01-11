@@ -18,11 +18,11 @@
     text-decoration: none;
 }
 /* hover */
-.bottone-prenota:hover {
+/* .bottone-prenota:hover {
     background-color: #ffffff; 
-}
+} */
 .bottone-prenota:hover a {
-    color: #000000;
+    color: #ffffff;
 }
 
 .underline {
