@@ -13,13 +13,12 @@
     transition: background-color 0.2s ease;
     width: fit-content;
 }
-.bottone-prenota a {
-    color: #ffffff;
+.bottone-prenota {
     text-decoration: none;
 }
 /* hover */
 .bottone-prenota:hover {
-    background-color: #ef7a61; 
+    background-color: #ffffff; 
 }
 .bottone-prenota:hover a {
     color: #000000;
