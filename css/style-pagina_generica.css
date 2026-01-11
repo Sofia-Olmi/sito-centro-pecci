@@ -15,7 +15,9 @@
 }
 .bottone-prenota a {
     color: #ffffff;
+    background-color: transparent;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 /* hover */
 .bottone-prenota:hover {
@@ -23,6 +25,7 @@
 }
 .bottone-prenota:hover a {
     color: #000000;
+    background-color: transparent;
 }
 
 /* BOTTONE PRENOTA HEADER */
