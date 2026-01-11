@@ -59,6 +59,6 @@ html {
 
 .nav-list-container {
     position: sticky;
-    top: 0; /* o il valore che preferisci, ad esempio top: 80px se vuoi lasciare spazio per l'header */
+    top: 88px;
     z-index: 100; /* assicurati che stia sopra agli altri elementi */
 }
