@@ -62,3 +62,11 @@ html {
     top: 88px;
     z-index: 100;
 }
+
+#TARIFFE,
+#VISITE,
+#COME,
+#ACCESSIBILITÀ,
+#MAPPA {
+    scroll-margin-top: 180px;
+}
