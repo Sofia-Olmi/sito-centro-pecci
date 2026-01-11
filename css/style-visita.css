@@ -60,5 +60,5 @@ html {
 .nav-list-container {
     position: sticky;
     top: 88px;
-    z-index: 100; /* assicurati che stia sopra agli altri elementi */
+    z-index: 100;
 }
