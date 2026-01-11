@@ -118,6 +118,33 @@ body{
 }
 
 
+/* ----------------------STILE LINK---------------------- */
+a.underline.hover-rosso:hover{
+    text-decoration: underline;
+    color: #ef7a61;
+}
+
+a.underline.hover-rosa:hover{
+    text-decoration: underline;
+    color: #ff8ec8;
+}
+
+a.underline.hover-verde:hover{
+    text-decoration: underline;
+    color: #33af7b;
+}
+
+a.underline.hover-giallo:hover{
+    text-decoration: underline;
+    color: #FFD34D;
+}
+
+a.underline.hover-viola:hover{
+    text-decoration: underline;
+    color: #a580b8;
+}
+
+
 /* ----------------------STILE HEADER---------------------- */
 
 .margine-header {
