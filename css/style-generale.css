@@ -181,7 +181,7 @@ body{
     height: 300px;
     opacity: 1;
     padding-bottom: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .elenco-voci{
     display: flex;
@@ -246,11 +246,11 @@ body{
 .menu li::after {
     content: '';
     position: absolute;
-    top: -5px;
+    top: -15px;
     left: 0px;
-    width: calc(100% + 10px);
-    transform: translate(-5.5px);
-    height: calc(100% + 5px + 1rem);
+    width: calc(100% + 30px);
+    transform: translate(-15px);
+    height: calc(100% + 15px + 1rem);
     background-color: transparent;
     transition: all 0.2s ease 0.1s;
     z-index: -1;
@@ -301,6 +301,30 @@ body{
 .social-link-header img {
     width: 30px;
     height: 30px;
+}
+
+/* BOTTONE PRENOTA ROSSO */
+.bottone-prenota {
+    background-color: #000000;
+    display: inline-block;
+    padding: 15px 20px;
+    transition: background-color 0.2s ease;
+    width: fit-content;
+}
+.bottone-prenota a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* hover */
+.bottone-prenota:hover a {
+    background-color: #ffffff; 
+}
+.bottone-prenota:hover a {
+    color: #000000;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* ----------------------STILE FOOTER---------------------- */
