@@ -5,7 +5,7 @@
 }
 
 
-/* BOTTONE PRENOTA ROSSO */
+/* BOTTONE PRENOTA HEADER */
 .bottone-prenota {
     margin-top: 20px;
     background-color: #000000;
@@ -14,15 +14,37 @@
     transition: background-color 0.2s ease;
     width: fit-content;
 }
-.bottone-prenota {
-    text-decoration: none;
-}
-/* hover */
-/* .bottone-prenota:hover {
-    background-color: #ffffff; 
-} */
-.bottone-prenota:hover a {
+.bottone-prenota a {
     color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: transparent;
+}
+
+/* Colore testo bottone in base alla sezione attiva */
+.voci-header:has(.nav-1.d-flex) .bottone-prenota a {
+    color: #ef7a61;
+}
+.voci-header:has(.nav-2.d-flex) .bottone-prenota a {
+    color: #FFD34D;
+}
+.voci-header:has(.nav-3.d-flex) .bottone-prenota a {
+    color: #a580b8;
+}
+.voci-header:has(.nav-4.d-flex) .bottone-prenota a {
+    color: #33af7b;
+}
+.voci-header:has(.nav-5.d-flex) .bottone-prenota a {
+    color: #ff8ec8;
+}
+
+/* hover - testo bianco, sfondo sempre nero */
+.bottone-prenota:hover {
+    background-color: #000000;
+}
+.bottone-prenota:hover a {
+    color: #ffffff !important;
+    background-color: transparent !important;
 }
 
 .underline {
