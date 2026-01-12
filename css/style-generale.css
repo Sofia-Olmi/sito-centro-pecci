@@ -3,6 +3,7 @@ body, html{
      margin: 0;
     padding: 0;
     background-color: #eaeaea;
+    position: relative;
 }
 
 ul{
@@ -148,7 +149,7 @@ a.underline.hover-viola:hover{
 /* ----------------------STILE HEADER---------------------- */
 
 .margine-header {
-    margin-top: 80px; /* Altezza dell'header */
+    margin-top: 80px;
 }
 
 .header {
