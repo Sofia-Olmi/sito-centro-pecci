@@ -49,6 +49,24 @@
     gap: 15px;
 }
 
-.col-lg-4{
-    width: 33.3% !important;
+.filtr-item {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px)  {
+    .filtr-item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+    .filtr-item {
+    flex: 0 0 auto;
+    width: 33.32%;
+  }
 }
