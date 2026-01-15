@@ -151,4 +151,27 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Collapse .voci-header when scrolling down while expanded
+  let lastScrollTop = 0;
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (vociHeader && vociHeader.classList.contains('expanded') && scrollTop > lastScrollTop) {
+      // Scrolling down while expanded
+      vociHeader.classList.remove('expanded');
+      vociHeader.classList.add('collapsed');
+      if (header) {
+        header.classList.add('closed');
+        header.classList.remove('open');
+      }
+      // Hide all nav-* ul
+      navLists.forEach(ul => {
+        ul.classList.add('d-none');
+        ul.classList.remove('d-flex', 'fade-in', 'fade-out');
+      });
+      // Remove .selected from all menu items
+      menuItems.forEach(nav => nav.classList.remove('selected'));
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  });
 });
