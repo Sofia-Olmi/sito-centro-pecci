@@ -36,22 +36,22 @@
             <div class="box-ricerca">
                 <form>
                     <select id="auto" name="auto">
-                        <option value="scuole">Scuole</option>
-                        <option value="uni">Università e Accademie</option>
-                        <option value="famiglie">Famiglie</option>
-                        <option value="giovani">Giovani adulti</option>
+                        <option data-filter="all">Tutti</option>
+                        <option data-filter="1">Scuole</option>
+                        <option data-filter="2">Università e Accademie</option>
+                        <option data-filter="3">Famiglie</option>
+                        <option data-filter="4">Giovani adulti</option>
+                        <option data-filter="5">Arte e benessere</option>
                     </select>
                 </form>
-                <button type="button" class="btn btn-primary btn-cerca-educazione">Cerca</button>
             </div>
         </div>
 </div>
 
 <!-- SEZIONE LABORATORI  -->
  <div class="mx-5">
- <div class="container-fluid my-5">
-    <div class="row">
-        <div class="col-md-4 mb-4">
+ <div class="filtr-container my-5">
+        <div class="mb-4 filtr-item" data-category="2, 1" data-sort="value">
                 <div class="card-mostra scuole">
                     <div class="img-mostra">
                         <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="mb-4 filtr-item" data-category="5, 3" data-sort="value">
                 <div class="card-mostra uni">
                     <div class="img-mostra">
                         <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="mb-4 filtr-item" data-category="1" data-sort="value">
                 <div class="card-mostra famiglie">
                     <div class="img-mostra">
                         <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="mb-4 filtr-item" data-category="4, 2" data-sort="value">
                 <div class="card-mostra giovani">
                     <div class="img-mostra">
                         <img src="img/img_archivio/img_archivio_1.webp" class="img-fluid" alt="mostra passata 1">
@@ -115,8 +115,6 @@
                     </div>
                 </div>
             </div>
-
-    </div>
  </div>
  </div>
 
@@ -181,6 +179,7 @@
 </footer>
 
 <script src="js/script-generale.js"></script>
+<script src="js/filterizr/vanilla.filterizr.min.js"></script>
 <script src="js/script-educazione.js"></script>
 </body>
 </html>
