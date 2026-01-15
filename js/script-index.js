@@ -1,6 +1,6 @@
 // Inizializzazione Swiper
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.mySwiper', {
+    const swiper = new Swiper('.swiper1', {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: false,
@@ -30,3 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
         wrapper.style.transform = `translateY(-${currentIndex * 450}px)`;
     });
 });
+
+
+
+// secondo swiper home
+ var swiper = new Swiper(".swiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
