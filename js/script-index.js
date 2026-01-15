@@ -7,15 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true,
         speed: 800,
         autoplay: {
-            delay: 7000,
-            disableOnInteraction: false,
+            delay: 5000,
+            disableOnInteraction: true,
         },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
             dynamicBullets: true,
         },
-        navigation: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
     console.log('Swiper inizializzato correttamente');
