@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// secondo swiper home
+//--------- secondo swiper home
  var swiper = new Swiper(".swiper2", {
       slidesPerView: 3,
       spaceBetween: 30,
