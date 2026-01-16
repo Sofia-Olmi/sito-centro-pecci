@@ -203,6 +203,7 @@ body {
     padding: 40px 0px;
 }
 
+
 /* STILE SWIPER EVENTI */
 .bg-grigio:has(swiper-container) {
     margin-top: 4rem;
@@ -212,6 +213,7 @@ body {
 swiper-container {
     width: 100%;
     height: 100%;
+    padding: 0 50px;
 }
 
 swiper-slide {
@@ -251,6 +253,27 @@ swiper-slide img {
 .slide-info .underline {
     margin-top: auto;
 }
+
+
+/* Frecce di navigazione nere */
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+swiper-container::part(button-prev) {
+    left: -60px;
+}
+
+swiper-container::part(button-next) {
+    right: -60px;
+}
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
