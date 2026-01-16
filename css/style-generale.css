@@ -366,7 +366,7 @@ a.underline.hover-viola:hover{
     /* margin-bottom: 8px;
     font-weight: bold; */
 }
-.form-control, .form-select{
+.form-control2, .form-select{
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 8px;
@@ -376,7 +376,7 @@ a.underline.hover-viola:hover{
     background: #ffffff;
     transition: border-color 0.3s;
 }
-.form-control:focus{
+.form-control2:hover{
     border-color: #ef7a61;
     outline: none;
 }   
@@ -386,14 +386,14 @@ a.underline.hover-viola:hover{
     width: 100%;
 }
 
-.email-wrapper .form-control {
+.email-wrapper .form-control2 {
     padding-right: 60px; /* Spazio per il bottone */
 }
 
 .email-wrapper .btn-submit {
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 0%;
     transform: translateY(-50%);
     background-color: #ffffff;
     border: none;
@@ -426,12 +426,6 @@ a.underline.hover-viola:hover{
     text-decoration: underline;
 }
 
-.social-icons {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
 .social-link {
     display: inline-block;
@@ -446,10 +440,34 @@ a.underline.hover-viola:hover{
     width: 50px;
     height: 50px;
 }
-@media (max-width: 1200px) {
-   
-    /* ----------------------STILE ACCORDION---------------------- */
 
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* icone footer desktop */
+@media (min-width: 577px) {
+    .social-icons img {
+        gap: 30px;
+
+    }
+}
+
+/* icone footer mobile */
+@media (max-width: 576px) {
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+        gap: 7px;
+
+    }
+}
+
+
+    /* ----------------------STILE ACCORDION---------------------- */
+@media (max-width: 1200px) {
 .accordion {
     opacity: 0;
     pointer-events: none;
