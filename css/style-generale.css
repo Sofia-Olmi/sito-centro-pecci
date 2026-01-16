@@ -638,11 +638,33 @@ details.open summary::before {
     }
     .titoletto {
         font-size: 18px;
-        line-height: 16px;
+        line-height: 18px;
     }
     .voci {
         font-size: 13px;
         line-height: 13px;
     }
+}
 
+/* ----------------------STILI TESTO TABLET---------------------- */
+@media (min-width: 577px) and (max-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+    .titolo {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .sottotitolo {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .titoletto {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .voci {
+        font-size: 14px;
+        line-height: 14px;
+    }
 }
