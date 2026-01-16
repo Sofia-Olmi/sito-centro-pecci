@@ -294,6 +294,9 @@ swiper-slide img {
     max-height: 100%;
     object-fit: contain;
 }
+.margine{
+    margin-left:40px;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
