@@ -35,4 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Re-equalize heights after filtering
         equalizeHeights();
     });
+
+    // Add event listener for window resize to recalculate heights
+    window.addEventListener('resize', equalizeHeights);
 });
