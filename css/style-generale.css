@@ -449,19 +449,19 @@ a.underline.hover-viola:hover{
 
 /* icone footer desktop */
 @media (min-width: 577px) {
-    .social-icons img {
-        gap: 30px;
-
+    .social-icons {
+        gap: 25px;
     }
 }
 
 /* icone footer mobile */
 @media (max-width: 576px) {
+    .social-icons {
+        gap: 7px;
+    }
     .social-icons img {
         width: 25px;
         height: 25px;
-        gap: 7px;
-
     }
 }
 
