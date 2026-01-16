@@ -447,6 +447,7 @@ a.underline.hover-viola:hover{
     height: 50px;
 }
 @media (max-width: 1200px) {
+   
     /* ----------------------STILE ACCORDION---------------------- */
 
 .accordion {
@@ -545,7 +546,6 @@ a.underline.hover-viola:hover{
     margin: 0;
     background-color: #ffffff;
     border-radius: 0 0 5px 5px;
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -618,5 +618,31 @@ summary::before {
 details.open summary::before {
   transform: rotate(0deg); /* Point down when open */
 }
+
+}
+
+
+
+/* ----------------------STILI TESTO MOBILE---------------------- */
+@media (max-width: 576px) {
+    body{
+        font-size: 16px;
+    }
+    .titolo {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .sottotitolo {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .titoletto {
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .voci {
+        font-size: 13px;
+        line-height: 13px;
+    }
 
 }
