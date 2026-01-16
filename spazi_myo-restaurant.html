@@ -111,10 +111,109 @@
         <li class="voci"><a href="#">Affiliati</a></li>
     </ul>
     <p class="bottone-prenota-header">
-        <a href="#">Prenota</a>
+        <a href="#" onclick="openLightbox(); return false;">Prenota</a>
     </p>
 </div>
 </header>
+
+<!-- LIGHTBOX BIGLIETTI -->
+<div id="lightbox" class="lightbox-overlay">
+    <div class="lightbox-content">
+        <button class="close-btn" onclick="closeLightbox()">×</button>
+            
+        <h2 class="form-title">Acquista ora il tuo biglietto!</h2>
+
+        <form id="ticketForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label class="form-label">
+                            Prezzo intero
+                            <span class="info-icon">i</span>
+                        </label>
+                        <div class="ticket-counter">
+                            <button type="button" class="counter-btn" onclick="updateCounter('intero', -1)">−</button>
+                            <div class="counter-value" id="counter-intero">1</div>
+                            <button type="button" class="counter-btn" onclick="updateCounter('intero', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            Prezzo ridotto
+                            <span class="info-icon">i</span>
+                        </label>
+                        <div class="ticket-counter">
+                            <button type="button" class="counter-btn" onclick="updateCounter('ridotto', -1)">−</button>
+                            <div class="counter-value" id="counter-ridotto">0</div>
+                            <button type="button" class="counter-btn" onclick="updateCounter('ridotto', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            Prezzo famiglie
+                            <span class="info-icon">i</span>
+                        </label>
+                        <div class="ticket-counter">
+                            <button type="button" class="counter-btn" onclick="updateCounter('famiglie', -1)">−</button>
+                            <div class="counter-value" id="counter-famiglie">0</div>
+                            <button type="button" class="counter-btn" onclick="updateCounter('famiglie', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            Omaggi e convenzioni
+                            <span class="info-icon">i</span>
+                        </label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="omaggio1">
+                                <label for="omaggio1">Convenzione tipo 1</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="omaggio2">
+                                <label for="omaggio2">Convenzione tipo 2</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            Laboratori ed eventi
+                            <span class="info-icon">i</span>
+                        </label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="lab1">
+                                <label for="lab1">Laboratorio 1</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="lab2">
+                                <label for="lab2">Evento speciale</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-col">
+                    <div class="form-group">
+                        <label class="form-label">Indirizzo mail:</label>
+                        <input type="email" class="form-control" placeholder="esempio@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Scegli una data:</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Riepilogo</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 <!-- ACCORDION MENU -->
 <div class="d-xl-none bg-bianco accordion">
@@ -291,9 +390,11 @@
         <p class="titoletto mt-4">Affiliati</p>
         <a class="voci" href="XXX" target=”_blank”>Ringraziamenti</a><br>
         <a class="voci" href="XXX" target=”_blank”>Sponsor</a>
+        
+        
     </div>
 
-    <div class="col-md-3 offset-md-1 mt-5">
+    <div class="col-md-3 offset-md-1 mt-5 col-2 offset-2">
         <p class="titoletto">Amministrazione</p>
         <a class="voci mt-2" href="XXX" target=”_blank”>Il Team</a><br>
         <a class="voci" href="XXX" target=”_blank”>Bandi</a><br>
