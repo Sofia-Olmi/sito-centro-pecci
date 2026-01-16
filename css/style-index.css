@@ -148,7 +148,7 @@ body {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: #000000 !important;
+    color: #535456 !important;
     /* background: rgba(255, 255, 255, 1); */
 }
 
@@ -254,24 +254,32 @@ swiper-slide img {
     margin-top: auto;
 }
 
-
-/* Frecce di navigazione nere */
-swiper-container::part(button-prev),
-swiper-container::part(button-next) {
-    color: #000000;
+/* Frecce personalizzate */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
     position: absolute;
-    top: 50%;
+    top: 51%;
     transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
-swiper-container::part(button-prev) {
-    left: -60px;
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    color: #535456;
 }
 
-swiper-container::part(button-next) {
-    right: -60px;
+/* Freccia sinistra: appena prima dello swiper */
+.swiper-button-prev-custom {
+    left: calc(41.66%);
 }
 
+/* Freccia destra: appena dopo lo swiper */
+.swiper-button-next-custom {
+    right: calc(8.33% + 10px);
+}
 
 
 

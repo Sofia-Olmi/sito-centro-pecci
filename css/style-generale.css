@@ -118,6 +118,10 @@ body{
     color: #ff8ec8; 
 }
 
+.color-grigio-scuro {
+    color: #535456; 
+}
+
 
 /* ----------------------STILE LINK---------------------- */
 a.underline.hover-rosso:hover{
