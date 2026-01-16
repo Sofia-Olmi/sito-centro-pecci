@@ -205,13 +205,6 @@ const counters = {
             closeLightbox();
         }
 
-        // Chiudi cliccando fuori dal contenuto
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-
         // Chiudi con tasto ESC
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
