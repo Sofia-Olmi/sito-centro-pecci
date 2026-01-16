@@ -12,8 +12,9 @@
 }
 
 .card-mostra {
-    background-color: #ffffff;
     overflow: hidden;
+    height: 100%;
+    background-color: #ffffff;
 }
 
 .img-mostra {
