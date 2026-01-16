@@ -148,7 +148,7 @@ body {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: #000000 !important;
+    color: #535456 !important;
     /* background: rgba(255, 255, 255, 1); */
 }
 
@@ -268,7 +268,7 @@ swiper-slide img {
 
 .swiper-button-prev-custom:hover,
 .swiper-button-next-custom:hover {
-    color: #d32f2f;
+    color: #535456;
 }
 
 /* Freccia sinistra: appena prima dello swiper */
