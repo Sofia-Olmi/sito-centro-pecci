@@ -149,6 +149,11 @@ a.underline.hover-viola:hover{
     color: #a580b8;
 }
 
+a.underline.hover-bianco:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 
 /* ----------------------STILE HEADER---------------------- */
 
@@ -358,6 +363,63 @@ a.underline.hover-viola:hover{
 
 .underline {
     text-decoration: underline;
+}
+
+.info-icon {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.info-tooltip {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFD34D;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.info-tooltip.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info-tooltip a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.info-tooltip a:hover {
+    color: #ffffff;
+}
+
+/* Freccia del tooltip */
+.info-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #FFD34D;
 }
 
 /* ----------------------STILE FOOTER---------------------- */
