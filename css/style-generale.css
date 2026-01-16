@@ -206,6 +206,10 @@ a.underline.hover-bianco:hover{
     gap: 20px;
 }
 
+.hover-voci-header:hover{
+    color: #ffffff;
+}
+
 /* Dropdown transition for voci-header */
 .voci-header {
     overflow: hidden;
@@ -333,7 +337,7 @@ a.underline.hover-bianco:hover{
 }
 
 .social-link-header:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .social-link-header img {
@@ -423,6 +427,9 @@ a.underline.hover-bianco:hover{
 }
 
 /* ----------------------STILE FOOTER---------------------- */
+.hover-voci-footer:hover{
+    color: #ffffff;
+}
 .form-label{
     display: block;
     /* margin-bottom: 8px;
@@ -495,7 +502,7 @@ a.underline.hover-bianco:hover{
 }
 
 .social-link:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .social-link img {
