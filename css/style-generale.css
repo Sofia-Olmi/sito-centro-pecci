@@ -624,7 +624,7 @@ details.open summary::before {
 
 
 /* ----------------------STILI TESTO MOBILE---------------------- */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     body{
         font-size: 16px;
     }
@@ -644,10 +644,10 @@ details.open summary::before {
         font-size: 13px;
         line-height: 13px;
     }
-}
+} */
 
 /* ----------------------STILI TESTO TABLET---------------------- */
-@media (min-width: 577px) and (max-width: 768px) {
+/* @media (min-width: 577px) and (max-width: 768px) {
     body{
         font-size: 18px;
     }
@@ -667,4 +667,4 @@ details.open summary::before {
         font-size: 14px;
         line-height: 14px;
     }
-}
+} */
