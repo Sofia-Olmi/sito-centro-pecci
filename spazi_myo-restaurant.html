@@ -119,15 +119,15 @@
 <!-- LIGHTBOX BIGLIETTI -->
 <div id="lightbox" class="lightbox-overlay">
     <div class="lightbox-content">
-        <button class="close-btn" onclick="closeLightbox()">×</button>
+        <button class="close-btn" onclick="closeLightbox()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
             
-        <h2 class="form-title">Acquista ora il tuo biglietto!</h2>
+        <h2 class="sottotitolo">Acquista ora il tuo biglietto!</h2>
 
         <form id="ticketForm" onsubmit="submitForm(event)">
             <div class="form-row">
                 <div class="form-col">
                     <div class="form-group">
-                        <label class="form-label">
+                        <label class="form-label titoletto">
                             Prezzo intero
                             <span class="info-icon">i</span>
                         </label>
@@ -139,7 +139,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">
+                        <label class="form-label titoletto">
                             Prezzo ridotto
                             <span class="info-icon">i</span>
                         </label>
@@ -151,7 +151,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">
+                        <label class="form-label titoletto">
                             Prezzo famiglie
                             <span class="info-icon">i</span>
                         </label>
@@ -163,48 +163,28 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">
+                        <label class="form-label titoletto">
                             Omaggi e convenzioni
                             <span class="info-icon">i</span>
                         </label>
-                        <div class="checkbox-group">
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="omaggio1">
-                                <label for="omaggio1">Convenzione tipo 1</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="omaggio2">
-                                <label for="omaggio2">Convenzione tipo 2</label>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">
+                        <label class="form-label titoletto">
                             Laboratori ed eventi
                             <span class="info-icon">i</span>
                         </label>
-                        <div class="checkbox-group">
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="lab1">
-                                <label for="lab1">Laboratorio 1</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="lab2">
-                                <label for="lab2">Evento speciale</label>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 <div class="form-col">
                     <div class="form-group">
-                        <label class="form-label">Indirizzo mail:</label>
-                        <input type="email" class="form-control" placeholder="esempio@email.com" required>
+                        <label class="form-label titoletto">Indirizzo mail:</label>
+                        <input type="email" class="form-control" placeholder="inserisci la tua email" required>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Scegli una data:</label>
+                        <label class="form-label titoletto">Scegli una data:</label>
                         <input type="date" class="form-control" required>
                     </div>
 
@@ -270,6 +250,7 @@
     </div>
 </div>
 
+<!-- CONTENUTO DELLA PAGINA -->
 <div class="container-fluid margine-header">
     <div class="row">
         <div class="col-4">

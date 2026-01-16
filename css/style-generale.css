@@ -736,7 +736,7 @@ details.open summary::before {
         }
 
         .lightbox-content {
-            background: #ffffff;
+            background: #eaeaea;
             padding: 50px;
             border-radius: 0;
             max-width: 900px;
@@ -764,7 +764,6 @@ details.open summary::before {
             right: 20px;
             background: none;
             border: none;
-            font-size: 35px;
             cursor: pointer;
             color: #000;
             transition: color 0.2s;
@@ -772,17 +771,6 @@ details.open summary::before {
             padding: 0;
             width: 35px;
             height: 35px;
-        }
-
-        .close-btn:hover {
-            color: #ef7a61;
-        }
-
-        .form-title {
-            font-weight: 600;
-            font-size: 35px;
-            line-height: 35px;
-            margin-bottom: 40px;
         }
 
         .form-row {
@@ -805,7 +793,6 @@ details.open summary::before {
             gap: 8px;
             margin-bottom: 10px;
             font-weight: 500;
-            font-size: 18px;
         }
 
         .info-icon {
@@ -818,7 +805,7 @@ details.open summary::before {
             justify-content: center;
             font-size: 12px;
             font-weight: bold;
-            cursor: help;
+            cursor: pointer;
         }
 
         .ticket-counter {
@@ -830,7 +817,7 @@ details.open summary::before {
         .counter-btn {
             width: 35px;
             height: 35px;
-            border: 3px solid #ffffff;
+            border: none;
             background: #000;
             color: #fff;
             border-radius: 3px;
@@ -845,7 +832,7 @@ details.open summary::before {
         }
 
         .counter-btn:hover {
-            background: #ef7a61;
+            background: #FFD34D;
         }
 
         .counter-value {
@@ -871,12 +858,13 @@ details.open summary::before {
         }
 
         .form-control:focus {
-            border-color: #ef7a61;
+            border-color: #FFD34D;
             outline: none;
         }
 
         input[type="date"] {
             text-transform: uppercase;
+            cursor: pointer;
         }
 
         .btn-submit {
@@ -893,32 +881,20 @@ details.open summary::before {
         }
 
         .btn-submit:hover {
-            background-color: #ef7a61;
+            background-color: #FFD34D;
         }
 
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
+        /* Icona calendario in Chrome, Safari, Edge */
+        /* input[type="date"]::-webkit-calendar-picker-indicator {
             cursor: pointer;
-        }
+        } */
 
-        .checkbox-item label {
+        /* Icona calendario in Firefox */
+        /* input[type="date"]::-moz-calendar-picker-indicator {
             cursor: pointer;
-            font-size: 16px;
-        }
+        } */
 
+        
         /* Responsive */
         @media (max-width: 768px) {
             .lightbox-content {
