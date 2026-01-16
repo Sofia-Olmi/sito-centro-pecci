@@ -149,6 +149,11 @@ a.underline.hover-viola:hover{
     color: #a580b8;
 }
 
+a.underline.hover-bianco:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 
 /* ----------------------STILE HEADER---------------------- */
 
@@ -364,6 +369,63 @@ a.underline.hover-viola:hover{
     text-decoration: underline;
 }
 
+.info-icon {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.info-tooltip {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFD34D;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.info-tooltip.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info-tooltip a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.info-tooltip a:hover {
+    color: #ffffff;
+}
+
+/* Freccia del tooltip */
+.info-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #FFD34D;
+}
+
 /* ----------------------STILE FOOTER---------------------- */
 .hover-voci-footer:hover{
     color: #ffffff;
@@ -373,7 +435,7 @@ a.underline.hover-viola:hover{
     /* margin-bottom: 8px;
     font-weight: bold; */
 }
-.form-control, .form-select{
+.form-control2, .form-select{
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 8px;
@@ -383,7 +445,7 @@ a.underline.hover-viola:hover{
     background: #ffffff;
     transition: border-color 0.3s;
 }
-.form-control:focus{
+.form-control2:hover{
     border-color: #ef7a61;
     outline: none;
 }   
@@ -393,14 +455,14 @@ a.underline.hover-viola:hover{
     width: 100%;
 }
 
-.email-wrapper .form-control {
+.email-wrapper .form-control2 {
     padding-right: 60px; /* Spazio per il bottone */
 }
 
 .email-wrapper .btn-submit {
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 0%;
     transform: translateY(-50%);
     background-color: #ffffff;
     border: none;
@@ -433,12 +495,6 @@ a.underline.hover-viola:hover{
     text-decoration: underline;
 }
 
-.social-icons {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
 .social-link {
     display: inline-block;
@@ -453,10 +509,34 @@ a.underline.hover-viola:hover{
     width: 50px;
     height: 50px;
 }
-@media (max-width: 1200px) {
-   
-    /* ----------------------STILE ACCORDION---------------------- */
 
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* icone footer desktop */
+@media (min-width: 577px) {
+    .social-icons {
+        gap: 25px;
+    }
+}
+
+/* icone footer mobile */
+@media (max-width: 576px) {
+    .social-icons {
+        gap: 7px;
+    }
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+    /* ----------------------STILE ACCORDION---------------------- */
+@media (max-width: 1200px) {
 .accordion {
     opacity: 0;
     pointer-events: none;

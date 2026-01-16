@@ -224,3 +224,37 @@ const counters = {
         if (dateInput) {
             dateInput.min = new Date().toISOString().split('T')[0];
         }
+
+        // Tooltip per icone info
+        document.addEventListener('DOMContentLoaded', function() {
+            const infoIcons = document.querySelectorAll('.info-icon');
+            
+            infoIcons.forEach(icon => {
+                icon.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const tooltip = this.querySelector('.info-tooltip');
+                    
+                    // Chiudi tutti gli altri tooltip
+                    document.querySelectorAll('.info-tooltip.active').forEach(t => {
+                        if (t !== tooltip) t.classList.remove('active');
+                    });
+                    
+                    // Toggle del tooltip corrente
+                    tooltip.classList.toggle('active');
+                });
+            });
+            
+            // AGGIUNGI QUESTO: Previeni la chiusura quando si clicca sul tooltip stesso
+            document.querySelectorAll('.info-tooltip').forEach(tooltip => {
+                tooltip.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            });
+            
+            // Chiudi tooltip cliccando fuori
+            document.addEventListener('click', function() {
+                document.querySelectorAll('.info-tooltip.active').forEach(t => {
+                    t.classList.remove('active');
+                });
+            });
+        });

@@ -129,7 +129,12 @@
                     <div class="form-group">
                         <label class="form-label titoletto">
                             Prezzo intero
-                            <span class="info-icon">i</span>
+                            <span class="info-icon">
+                                i
+                                <span class="info-tooltip">Biglietto intero: €10 
+                                    <br><a href="visita.html#TARIFFE" class="underline hover-bianco">Scopri di più</a>
+                                </span>
+                            </span>
                         </label>
                         <div class="ticket-counter">
                             <button type="button" class="counter-btn" onclick="updateCounter('intero', -1)">−</button>
@@ -141,7 +146,13 @@
                     <div class="form-group">
                         <label class="form-label titoletto">
                             Prezzo ridotto
-                            <span class="info-icon">i</span>
+                            <span class="info-icon">
+                                i
+                                <span class="info-tooltip">Riduzioni: Over 65 e under 26, <br>gruppi con prenotazione min. 12 persone, <br> studenti, 
+                                    soci UniCoop Firenze, FAI, <br>possessori Edumuseicard, utenti GreenApes, <br>possessori biglietto Fondazione 
+                                    Pistoia Musei, <br>Fondazione Palazzo Strozzi, Gallerie d'Italia: €7
+                                <br> </span>
+                            </span>
                         </label>
                         <div class="ticket-counter">
                             <button type="button" class="counter-btn" onclick="updateCounter('ridotto', -1)">−</button>
@@ -345,7 +356,7 @@
     <div class="col-md-6 mt-md-3 mt-3">
         <label for="email" class="titolo">NEWSLETTER</label>
         <div class="email-wrapper mt-md-2 mt-1">
-            <input type="text" class="form-control" id="Email" name="Email" required placeholder="Inserisci la tua email">
+            <input type="text" class="form-control2" id="Email" name="Email" required placeholder="Inserisci la tua email">
             <button type="submit" class="btn-submit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -375,17 +386,16 @@
         
     </div>
 
-    <div class="col-md-3 offset-md-1 mt-md-5 mt-sm-1 col-6">
+    <div class="col-md-3 offset-md-1 mt-md-5 mb-0mt-sm-1 col-6">
         <p class="titoletto">Amministrazione</p>
         <a class="voci mt-2 hover-voci-footer" href="XXX" target=”_blank”>Il Team</a><br>
         <a class="voci hover-voci-footer" href="XXX" target=”_blank”>Bandi</a><br>
         <a class="voci hover-voci-footer" href="XXX" target=”_blank”>Opportunità Collaborative</a><br>
         <a class="voci hover-voci-footer" href="XXX" target=”_blank”>Amministrazione Trasparente</a>
     </div>
-    </div>
 
     <!-- Icone social -->
-    <div class="social-icons mt-4 mb-3">
+    <div class="social-icons mt-md-4 mt-3 mb-3 mb-md-3">
         <a href="https://www.facebook.com/CentroPecciPrato" target="_blank" class="social-link">
             <img src="img/img_generale/icone footer/icons8-facebook.svg" alt="Facebook">
         </a>
@@ -398,7 +408,12 @@
         <a href="https://www.youtube.com/centropecci" target="_blank" class="social-link">
             <img src="img/img_generale/icone footer/icons8-youtube.svg" alt="YouTube">
         </a>
+
     </div>
+
+    </div>
+
+
 
 </footer>
 
