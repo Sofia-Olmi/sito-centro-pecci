@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     swiper.on('slideChange', function() {
         currentIndex = swiper.realIndex;
-        wrapper.style.transform = `translateY(-${currentIndex * 450}px)`;
+        wrapper.style.transform = `translateY(-${currentIndex * 300}px)`;
     });
 });
 

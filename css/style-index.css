@@ -132,6 +132,14 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 10px;
+        height: 10px;
+    }
+}
+
 .swiper-button-next {
     right: -60px;
 }
@@ -202,6 +210,8 @@ body {
     align-items: flex-start;
     padding: 40px 0px;
 }
+
+
 
 
 /* STILE SWIPER EVENTI */
@@ -306,7 +316,11 @@ swiper-slide img {
     }
 
     .swiper {
-        height: 350px;
+        height: auto;
+    }
+
+    .slide-content img {
+        height: auto;
     }
 
     .slide-info h3 {
@@ -323,15 +337,30 @@ swiper-slide img {
 
     .swiper-button-next,
     .swiper-button-prev {
-        width: 36px;
-        height: 36px;
-        right: -50px;
-        left: -50px;
+        width: 30px;
+        height: 30px;
+        right: -40px;
+        left: -40px;
     }
 
     .swiper-button-next:after,
     .swiper-button-prev:after {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    /* Diminuisci spazio tra swiper 1 e slider verticale */
+    /* .row.mt-4.mb-5 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    } */
+
+    .vertical-slider-container {
+        height: 300px;
+    }
+
+    .vertical-slide {
+        min-height: 300px;
+        padding: 20px 0px;
     }
 }
 
@@ -341,6 +370,10 @@ swiper-slide img {
     }
 
     .swiper {
-        height: 280px;
+        height: auto;
+    }
+
+    .slide-content img {
+        height: auto;
     }
 }
