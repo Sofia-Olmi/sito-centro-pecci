@@ -1,50 +1,95 @@
 .header-mostre {
-    min-height: 445px;
-}
+            min-height: 445px;
+        }
 
-.contenuto-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 445px;
-    gap: 2rem;
-    padding: 0 15px;
-}
+        .contenuto-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 445px;
+            gap: 2rem;
+            padding: 0 15px;
+        }
 
-.sezione-sinistra {
-    flex: 0 0 60%;
-}
+        .sezione-sinistra {
+            flex: 0 0 60%;
+        }
 
-.sezione-destra {
-    flex: 0 0 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .sezione-destra {
+            flex: 0 0 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.titolo-cinema{
-    margin: 0 0 1rem 0 !important;
-    line-height: 1.2; 
-}
+        .titolo-cinema{
+            margin: 0 0 1rem 0 !important;
+            line-height: 1.2; 
+        }
 
-.titoletto-cinema{
-    margin: 0 !important;
-    line-height: 27.5px;
-}
+        .titoletto-cinema{
+            margin: 0 !important;
+            line-height: 27.5px;
+        }
 
-.sottotitolo-cinema{
-    line-height: 1.4; 
-}
+        .sottotitolo-cinema{
+            line-height: 1.4; 
+        }
 
-.testo-cinema{
-    line-height: 22px; 
-}
+        .testo-cinema{
+            line-height: 22px; 
+        }
 
-.icona-cinema{
-    max-width: 100%;
-    width: 220px;
-    height: auto;
-}
-.underline {
-    text-decoration: underline;
-}
+        .icona-cinema{
+            max-width: 100%;
+            width: 220px;
+            height: auto;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* NUOVI STILI PER MOBILE */
+        @media (max-width: 767px) {
+            .header-mostre {
+                min-height: 114px;
+            }
+            
+            .contenuto-header {
+                min-height: 114px;
+            }
+            
+            .icona-cinema {
+                height: 69px;
+                width: auto;
+            }
+            
+            .sezione-destra {
+                flex: 0 0 50%;
+            }
+            
+            .sezione-sinistra {
+                flex: 0 0 50%;
+            }
+            
+            /* Rimuove spazi tra testi */
+            .titolo {
+                margin: 0 !important;
+            }
+            
+            .sottotitolo {
+                margin: 0 !important;
+            }
+            
+            .underline {
+                margin-top: 0.5rem !important;
+                margin-bottom: 1rem !important;
+            }
+            
+            /* Spazio sotto ogni immagine */
+            .col-12.col-md-8 img,
+            .col-12.col-md-4 img {
+                margin-bottom: 1rem;
+            }
+        }
