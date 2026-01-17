@@ -71,7 +71,7 @@ html {
     scroll-margin-top: 180px;
 }
 
-.lightbox {
+.lightbox1 {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -85,18 +85,18 @@ html {
     cursor: pointer;
 }
 
-.lightbox.active {
+.lightbox1.active {
     display: flex;
 }
 
-.lightbox-content {
+.lightbox1-content {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
     animation: zoomIn 0.3s ease;
 }
 
-.lightbox-close {
+.lightbox1-close {
     position: absolute;
     top: 20px;
     right: 40px;
