@@ -1,9 +1,9 @@
-
+/* STICKY DESKTOP */
 .box-sticky {
+    position: -webkit-sticky;
     position: sticky;
     top: 100px;
 }
-
 
 /* BOTTONE PRENOTA ROSSO */
 .bottone-prenota {
@@ -72,4 +72,21 @@
 
 .underline {
     text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .margine-header {
+        margin-top: 0;
+    }
+    
+    .box-sticky {
+        position: static;
+        top: auto;
+    }
+    
+    /* Padding per il contenuto mobile */
+    .mobile-content-padding {
+        padding: 0 15px;
+    }
 }
