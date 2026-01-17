@@ -21,37 +21,50 @@
 <body>
 <!-- HEADER -->
 
-
 <div class="container-fluid margine-header">
     <div class="row">
-        <div class="col-4">
-            <div class="px-0 box-sticky">
+        <!-- IMMAGINE - prima su mobile, nascosta su desktop -->
+        <div class="col-12 d-md-none order-1 px-0">
+            <img src="img/img_mostre/ri-pensare_la_scultura_pagina_generica.webp" alt="immagine dalla mostra ri-pensare la scultura" class="img-fluid w-100">
+        </div>
+        
+        <!-- TESTO INTRODUTTIVO - secondo su mobile, ha position sticky su desktop -->
+        <div class="col-12 col-md-4 order-2 order-md-1">
+            <div class="box-sticky">
+                <div class="mobile-content-padding">
                     <p class="titolo mt-5">Ri-pensare la scultura</p>
                     <p class="color-grigio-scuro">La mostra celebra Prato 88, la grande scultura ad arco di Mauro Staccioli simbolo del Centro Pecci. Attraverso bozzetti, disegni originali e sculture, ripercorre l'evoluzione artistica di Staccioli dagli anni Settanta al nuovo millennio, evidenziando la sua poetica dello spazio come dialogo tra forma scultorea e contesto ambientale.</p>
                     <p class="mt-4 mb-4 bottone-prenota">
                     <a class="" href="#">prenota</a>
                     </p>
+                </div>
             </div>
         </div>
-        <div class="col-8 px-0">
-            <div class="container-fluid">
-                <div class="row">
+        
+        <!-- IMMAGINE E CONTENUTO - terzo su mobile, visibile su desktop -->
+        <div class="col-12 col-md-8 offset-md-0 order-3 order-md-2">
+            <div class="container-fluid px-0">
+                <!-- Immagine solo desktop -->
+                <div class="row d-none d-md-flex">
                     <div class="col-12">
                         <img src="img/img_mostre/ri-pensare_la_scultura_pagina_generica.webp" alt="immagine dalla mostra ri-pensare la scultura" class="img-fluid">
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-4">
+                
+                <div class="row mt-4 mobile-content-padding">
+                    <div class="col-12 col-md-4">
                         <p class="sottotitolo">DATE</p>
-                        <p class="sottotitolo color-rosso">06.11.2025<br>06.01.2026<br>Opening 06.11.25, h. 12:30</p>
+                        <p class="sottotitolo color-rosso d-none d-md-block">06.11.2025<br>06.01.2026<br>Opening 06.11.25, h. 12:30</p>
+                        <p class="sottotitolo color-rosso d-md-none">06.11.2025 - 06.01.2026 - Opening 06.11.25, h. 12:30</p>
                     </div>
-                    <div class="col-6 offset-2">
+                    <div class="col-12 col-md-6 offset-md-2 mt-4 mt-md-0">
                         <p class="sottotitolo">INFO GENERALI</p>
-                        <p class="color-grigio-scuro">Artista: Mauro Staccioli<br>Mostra a cura di: Mauro Staccioli<br>Anno: 1989</p>
+                        <p class="color-grigio-scuro d-none d-md-block">Artista: Mauro Staccioli<br>Mostra a cura di: Mauro Staccioli<br>Anno: 1989</p>
+                        <p class="color-grigio-scuro d-md-none">Artista: Mauro Staccioli - Mostra a cura di: Mauro Staccioli - Anno: 1989</p>
                     </div>
                 </div>
-                <div class="row mt-4 mb-5">
-                    <div class="col-10">
+                <div class="row mt-4 mb-5 mobile-content-padding">
+                    <div class="col-12 col-md-10">
                         <p class="sottotitolo">LA MOSTRA</p>
                         <p class="color-grigio-scuro">La scultura Prato 88, arco slanciato dall'orizzonte al cielo, incarna la poetica di Staccioli: "costruire un'idea come costruire un edificio", pensando lo spazio come occasione di lettura immaginativa del contesto. Nonostante i cambiamenti architettonici al Centro Pecci, l'opera resta segno distintivo del museo e della presenza artistica contemporanea a Prato. La mostra presenta bozzetti e disegni originali di Prato 88 e interventi coevi a Seul e Kassel (1988), oltre a sculture e disegni che tracciano l'evoluzione della ricerca di Staccioli: dalle forme appuntite in ferro o cemento del 1971, alle mezzelune in cemento o acciaio corten dei primi Novanta, fino alle geometrie curve attraversabili in acciaio corten del nuovo millennio.</p>
                     </div>
@@ -60,6 +73,7 @@
         </div>
     </div>
 </div>
+
 
  <!---------------------- FOOTER --------------------->
 <footer class="container-fluid bg-azzurro ">

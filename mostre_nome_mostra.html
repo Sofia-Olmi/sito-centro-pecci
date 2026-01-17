@@ -21,37 +21,47 @@
 <body>
 <!-- HEADER -->
 
-
 <div class="container-fluid margine-header">
     <div class="row">
-        <div class="col-4">
-            <div class="px-0 box-sticky">
-                    <p class="titolo mt-5">Luigi Ghirri.<br> Polaroid '79-'83</p>
+        <!-- IMMAGINE - prima su mobile, nascosta su desktop -->
+        <div class="col-12 d-md-none order-1 px-0">
+            <img src="img/img_mostre/luigi_ghirri_pagina_generica.webp" alt="immagine dalla mostra ri-pensare la scultura" class="img-fluid w-100">
+        </div>
+
+        <!-- TESTO INTRODUTTIVO - secondo su mobile, ha position sticky su desktop -->
+        <div class="col-12 col-md-4 order-2 order-md-1">
+            <div class="box-sticky">
+                <div class="mobile-content-padding">
+                    <p class="titolo mt-3">Luigi Ghirri.<br> Polaroid '79-'83</p>
                     <p class="color-grigio-scuro">La mostra presenta polaroid inedite di Luigi Ghirri realizzate tra il 1979 e il 1983. Un aspetto poco conosciuto della sua produzione che rivela come il maestro abbracciasse l'immediatezza della fotografia istantanea, mantenendo il suo sguardo poetico su paesaggio, oggetti e memoria.</p>
-                    <p class="mt-4 mb-4 bottone-prenota">
+                    <p class="mt-4 mb-1 bottone-prenota">
                     <a class="" href="#">prenota</a>
                     </p>
+                </div>
             </div>
         </div>
-        <div class="col-8 px-0">
-            <div class="container-fluid">
-                <div class="row">
+        <!-- IMMAGINE E CONTENUTO - terzo su mobile, visibile su desktop -->
+        <div class="col-12 col-md-8 offset-md-0 order-3 order-md-2">
+            <div class="container-fluid px-0">
+                <!-- Immagine solo desktop -->
+                <div class="row d-none d-md-flex">
                     <div class="col-12">
                         <img src="img/img_mostre/luigi_ghirri_pagina_generica.webp" alt="immagine dalla mostra ri-pensare la scultura" class="img-fluid">
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-4">
+
+                <div class="row mt-4 mobile-content-padding">
+                    <div class="col-12 col-md-4 order-2 order-md-1 mt-5 mt-md-0">
                         <p class="sottotitolo">DATE</p>
                         <p class="sottotitolo color-rosso">22.11.2025<br>10.05.2026</p><p class="sottotitolo">Opening</p><p class="sottotitolo color-rosso">21.11.25, h. 18:00</p>
                     </div>
-                    <div class="col-6 offset-2">
+                    <div class="col-12 col-md-6 offset-md-2 mt-4 mt-md-0 order-1 order-md-2">
                         <p class="sottotitolo">INFO GENERALI</p>
                         <p class="color-grigio-scuro">Artista: Luigi Ghirri<br>Mostra a cura di: Chiara Agradi e<br>Stefano Collicelli Cagol<br>Anno: dal 1979 al 1983</p>
                     </div>
                 </div>
-                <div class="row mt-4 mb-5">
-                    <div class="col-10">
+                <div class="row mt-4 mb-5 mobile-content-padding">
+                    <div class="col-12 col-md-10">
                         <p class="sottotitolo">LA MOSTRA</p>
                         <p class="color-grigio-scuro">Luigi Ghirri unisce approccio concettuale ed empatia visiva. Le sue fotografie, popolate da oggetti-memoria, paesaggi italiani stratificati e persone, offrono familiarità e riconoscibilità, pur mantenendo una postura analitica che indaga la tecnica fotografica: temporalità multiple, composizione selettiva, sdoppiamento della realtà, rivelazione dell'invisibile quotidiano. La mostra presenta polaroid del 1979-1983, frutto della collaborazione con Polaroid che fornì pellicole e macchine. Nel 1980-81 Ghirri sperimentò ad Amsterdam la fotocamera 20x24, capace di istantanee extra-large. Queste polaroid rivelano un Ghirri inedito: dopo un decennio di rigore concettuale, accoglie l'aleatorietà dello sviluppo istantaneo; lontano dall'Emilia, ricrea il suo universo disponendo oggetti portati dall'Italia. L'esposizione sollecita riflessioni sul dialogo tra fotografia analogica istantanea e fruizione digitale contemporanea, confermando la capacità del Centro Pecci di proporre letture inaspettate di artisti noti, evidenziandone l'attualità e aspetti poco conosciuti della loro produzione.</p>
                     </div>
