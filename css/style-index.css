@@ -308,6 +308,17 @@ swiper-slide img {
     margin-left:40px;
 }
 
+/* MOBILE APERITIVO */
+@media (max-width: 768px) {
+    .bg-verde .col-2.d-flex.mt-4.mb-4:first-child {
+        margin-top: 2rem !important;
+    }
+
+    .bg-verde .col-2.d-flex.mt-4.mb-4.margine {
+        margin-top: 1rem !important;
+    }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .video-container {
