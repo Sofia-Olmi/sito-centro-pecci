@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded', function () {
           clickedInsideItem = true;
         }
       });
-      // Do not remove if clicked on hamburger icon or inside accordion items
-      if (!clickedInsideItem && !hamburgerIcon.contains(e.target) && accordion.classList.contains('open')) {
+      // Do not remove if clicked on hamburger icon or inside accordion items, or if lightbox is active, or if clicked on close button, or if lightbox is being closed by this click
+      if (!clickedInsideItem && !hamburgerIcon.contains(e.target) && accordion.classList.contains('open') && !document.getElementById('lightbox').classList.contains('active') && !e.target.closest('.close-btn') && !document.getElementById('lightbox').dataset.closingOnClick) {
         accordion.classList.remove('open');
       }
     });
@@ -186,6 +186,11 @@ const counters = {
         function openLightbox() {
             document.getElementById('lightbox').classList.add('active');
             document.body.style.overflow = 'hidden';
+            // Prevent immediate closing on the same click
+            document.getElementById('lightbox').dataset.justOpened = 'true';
+            setTimeout(() => {
+                delete document.getElementById('lightbox').dataset.justOpened;
+            }, 10);
         }
 
         function closeLightbox() {
@@ -209,6 +214,17 @@ const counters = {
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeLightbox();
+            }
+        });
+
+        // Chiudi cliccando fuori dal lightbox
+        document.addEventListener('click', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxContent = lightbox.querySelector('.lightbox-content');
+            if (lightbox.classList.contains('active') && !lightboxContent.contains(e.target) && !lightbox.dataset.justOpened) {
+                lightbox.dataset.closingOnClick = 'true';
+                closeLightbox();
+                setTimeout(() => delete lightbox.dataset.closingOnClick, 0);
             }
         });
 

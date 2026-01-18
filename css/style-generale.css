@@ -60,8 +60,11 @@ body{
     text-decoration: underline;
 }
 
-
-
+.corpo{
+    font-weight: normal;
+    line-height: 20px; 
+    font-size: 18px;
+}
 
 /* ----------------------COLORI SFONDO----------------------*/
 .bg-giallo {
@@ -542,7 +545,7 @@ a.underline.hover-bianco:hover{
     pointer-events: none;
     position: fixed;
     top: -80px;
-    z-index: 1000000000000;
+    z-index: 1500;
     width: 100vw;
     height: calc(100vh + 80px);
     transition: opacity 0.1s ease;
@@ -579,16 +582,41 @@ a.underline.hover-bianco:hover{
     transform: translateY(80px);
 }
 
+.bottone-prenota-accordion {
+    margin-top: 20px;
+    background-color: #000000;
+    display: inline-block;
+    padding: 6px;
+    padding-left: 15px;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bottone-prenota-accordion a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: transparent;
+}
+
+.bottone-prenota-accordion:hover a {
+    color: #FFD34D !important;
+}
+
 .accordion-item {
     width: 100%;
     max-width: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .accordion-summary {
     background-color: #ffffff;
     border: none;
-    padding: 10px;
+    padding: 6px;
     padding-left: 15px;
     cursor: pointer;
     width: 100%;
@@ -596,6 +624,22 @@ a.underline.hover-bianco:hover{
     transition: color 0.2s;
     position: relative;
     z-index: 10;
+}
+
+.nav-1 .accordion-content {
+    background-color: #ef7a61;
+}
+.nav-2 .accordion-content {
+    background-color: #FFD34D;
+}
+.nav-3 .accordion-content {
+    background-color: #a580b8;
+}
+.nav-4 .accordion-content {
+    background-color: #33af7b;
+}
+.nav-5 .accordion-content {
+    background-color: #ff8ec8;
 }
 
 .accordion-item.nav-1 .accordion-summary {
@@ -631,78 +675,61 @@ a.underline.hover-bianco:hover{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
+    color: transparent;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
     transform: translateY(-5px);
-    transition: max-height 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
+    transition: max-height 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .accordion-item.open .accordion-content {
     max-height: 500px;
     opacity: 1;
     transform: translateY(0);
-    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    color: #000000;
+    transition: max-height 0.6s ease, color 0.6s ease, transform 0.6s ease;
 }
 
 .accordion-content li {
     padding: 10px 15px;
     padding-left: 30px;
-    border-bottom: 2px solid #eaeaea;
 }
 
-.accordion-content li:last-child {
-    border-bottom: none;
-}
-
-.accordion-content a {
+.accordion-item.open a {
     text-decoration: none;
-    color: #000000;
 }
 
-.nav-1 .accordion-content a:hover {
-    color: #ef7a61;
-}
-.nav-2 .accordion-content a:hover {
-    color: #FFD34D;
-}
-.nav-3 .accordion-content a:hover {
-    color: #a580b8;
-}
-.nav-4 .accordion-content a:hover {
-    color: #33af7b;
-}
-.nav-5 .accordion-content a:hover {
-    color: #ff8ec8;
+.accordion-content a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 summary {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-summary::before {
+summary::after {
   content: "";
-  display: inline-block;
   width: 30px;
   height: 30px;
-  margin: -6px;
-  margin-right: 8px;
-  margin-bottom: -7px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23000000'%3E%3Cpath d='M480-360 280-560h400L480-360Z'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(-90deg); /* Start rotated left */
+  transform: rotate(90deg); /* Start rotated left */
   transition: transform 0.3s;
   transition: filter 0.3s, transform 0.3s;
 }
 
-.accordion-summary:hover::before {
+.accordion-summary:hover::after {
     filter: invert(1);
 }
 
-details.open summary::before {
+details.open summary::after {
   transform: rotate(0deg); /* Point down when open */
 }
 
