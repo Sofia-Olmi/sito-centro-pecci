@@ -174,6 +174,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   });
+
+  // Collapse .voci-header when window is resized while expanded
+  window.addEventListener('resize', function() {
+    if (vociHeader && vociHeader.classList.contains('expanded')) {
+      // Resizing while expanded
+      vociHeader.classList.remove('expanded');
+      vociHeader.classList.add('collapsed');
+      if (header) {
+        header.classList.add('closed');
+        header.classList.remove('open');
+      }
+      // Hide all nav-* ul
+      navLists.forEach(ul => {
+        ul.classList.add('d-none');
+        ul.classList.remove('d-flex', 'fade-in', 'fade-out');
+      });
+      // Remove .selected from all menu items
+      menuItems.forEach(nav => nav.classList.remove('selected'));
+    }
+    // Close accordion menu if open
+    if (accordion && accordion.classList.contains('open')) {
+      accordion.classList.remove('open');
+      // Close all open accordion items
+      accordionItems.forEach(item => {
+        item.classList.remove('open');
+      });
+    }
+  });
 });
 
 // Lightbox per l'acquisto biglietti
