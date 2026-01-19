@@ -42,34 +42,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('.swiper-button-next-custom');
 
     if (swiperElement) {
-        // Inizializza swiper con breakpoints
-        const swiper2 = new Swiper(swiperElement, {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                }
-            }
-        });
+        // Imposta slides-per-view in base alla larghezza
+        if (window.innerWidth < 768) {
+            swiperElement.setAttribute('slides-per-view', '2');
+        } else {
+            swiperElement.setAttribute('slides-per-view', '3');
+        }
 
-        // Collega le frecce personalizzate
+        // Collega le frecce personalizzate al swiper web component
         if (prevButton) {
             prevButton.addEventListener('click', () => {
-                swiper2.slidePrev();
+                swiperElement.swiper.slidePrev();
             });
         }
 
         if (nextButton) {
             nextButton.addEventListener('click', () => {
-                swiper2.slideNext();
+                swiperElement.swiper.slideNext();
             });
         }
     }
 
-    // Nasconde il primo paragrafo su mobile
+    // Nasconde il secondo paragrafo su mobile
     if (window.innerWidth < 768) {
-        const para = document.getElementById('primo-paragrafo');
+        const para = document.getElementById('paragrafo-centro-pecci');
         if (para) {
             para.style.display = 'none';
         }
