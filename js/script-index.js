@@ -40,15 +40,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const swiperElement = document.querySelector('.swiper2');
     const prevButton = document.querySelector('.swiper-button-prev-custom');
     const nextButton = document.querySelector('.swiper-button-next-custom');
-    
-    if (swiperElement && prevButton && nextButton) {
-        // Per swiper web component, accedi all'istanza tramite .swiper
-        prevButton.addEventListener('click', () => {
-            swiperElement.swiper.slidePrev();
+
+    if (swiperElement) {
+        // Inizializza swiper con breakpoints
+        const swiper2 = new Swiper(swiperElement, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                }
+            }
         });
-        
-        nextButton.addEventListener('click', () => {
-            swiperElement.swiper.slideNext();
-        });
+
+        // Collega le frecce personalizzate
+        if (prevButton) {
+            prevButton.addEventListener('click', () => {
+                swiper2.slidePrev();
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener('click', () => {
+                swiper2.slideNext();
+            });
+        }
+    }
+
+    // Nasconde il primo paragrafo su mobile
+    if (window.innerWidth < 768) {
+        const para = document.getElementById('primo-paragrafo');
+        if (para) {
+            para.style.display = 'none';
+        }
     }
 });
