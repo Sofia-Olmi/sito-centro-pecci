@@ -395,3 +395,18 @@ swiper-slide img {
         padding: 0;
     }
 }
+
+/* RESPONSIVE SWIPER EVENTI */
+@media (max-width: 768px) {
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev-custom svg,
+    .swiper-button-next-custom svg {
+        width: 20px;
+        height: 20px;
+    }
+}
