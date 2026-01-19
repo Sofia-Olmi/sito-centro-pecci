@@ -74,8 +74,8 @@
     text-decoration: underline;
 }
 
-/* MOBILE */
-@media (max-width: 767px) {
+/* MOBILE - inizia da 1245px */
+@media (max-width: 1245px) {
     .margine-header {
         margin-top: 0;
     }
@@ -88,5 +88,43 @@
     /* Padding per il contenuto mobile */
     .mobile-content-padding {
         padding: 0 15px;
+    }
+    
+    /* Override Bootstrap breakpoints */
+    /* Colonne mobile */
+    .col-md-4, .col-md-6, .col-md-8, .col-md-10, .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .offset-md-2 {
+        margin-left: 0;
+    }
+    
+    /* Display utilities */
+    .d-md-none {
+        display: block !important;
+    }
+    
+    .d-md-flex {
+        display: none !important;
+    }
+    
+    /* Order utilities */
+    .order-md-1 {
+        order: 1;
+    }
+    
+    .order-md-2 {
+        order: 2;
+    }
+    
+    /* Margin/padding mobile */
+    .mt-md-0 {
+        margin-top: 0 !important;
+    }
+    
+    .mt-md-3, .mt-md-4, .mt-md-5 {
+        margin-top: 0 !important;
     }
 }
