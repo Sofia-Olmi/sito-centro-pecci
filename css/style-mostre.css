@@ -141,7 +141,7 @@
         }
 
         /* NUOVI STILI PER MOBILE */
-        @media (max-width: 767px) {
+        @media (max-width: 1245px) {
             .header-mostre {
                 min-height: 114px;
             }
