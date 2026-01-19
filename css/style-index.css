@@ -388,3 +388,10 @@ swiper-slide img {
         height: auto;
     }
 }
+
+/* MOBILE IL CENTRO PECCI */
+@media (max-width: 768px) {
+    .immagine-centro-pecci {
+        padding: 0;
+    }
+}
