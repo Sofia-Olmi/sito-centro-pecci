@@ -592,17 +592,17 @@ a.underline.hover-bianco:hover{
 }
 
 .bottone-prenota-accordion {
-    margin-top: 20px;
     background-color: #000000;
     display: inline-block;
-    padding: 6px;
-    padding-left: 15px;
+    padding: 6px 15px;
+    /* padding-left: 15px; */
     transition: background-color 0.2s ease;
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    height: 42px;
 }
 
 .bottone-prenota-accordion a {
@@ -635,8 +635,16 @@ a.underline.hover-bianco:hover{
 
 .accordion-item {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     margin-bottom: 5px;
+}
+
+.accordion-info{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion-summary {
@@ -748,6 +756,7 @@ summary::after {
   background-repeat: no-repeat;
   padding-right: 2rem;
   transition: transform 0.3s;
+  transform: rotate(-90deg);
   transition: filter 0.3s, transform 0.3s;
 }
 
@@ -756,7 +765,7 @@ summary::after {
 }
 
 details.open summary::after {
-  transform: rotate(-90deg); /* Point down when open */
+  transform: rotate(90deg); /* Point down when open */
 }
 
 }

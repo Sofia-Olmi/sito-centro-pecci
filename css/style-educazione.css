@@ -156,6 +156,19 @@ h3{
   }
 }
 
+@media (max-width: 768px) {
+  .icona-educazione {
+    height: 69px;
+    width: auto;
+  }
+
+  .riga1-educazione {
+    height: 114px;
+    min-height: auto;
+    padding: 0;
+  }
+}
+
 @media (min-width: 1075px) {
     .d-pers-none {
     display: none !important;
