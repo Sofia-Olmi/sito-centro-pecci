@@ -41,14 +41,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.querySelector('.swiper-button-prev-custom');
     const nextButton = document.querySelector('.swiper-button-next-custom');
 
-    if (swiperElement) {
-        // Imposta slides-per-view in base alla larghezza
-        if (window.innerWidth < 768) {
-            swiperElement.setAttribute('slides-per-view', '2');
-        } else {
-            swiperElement.setAttribute('slides-per-view', '3');
+    // Funzione per aggiornare slides-per-view in base alla larghezza
+    function updateSwiperSlides() {
+        if (swiperElement) {
+            if (window.innerWidth < 1250) {
+                swiperElement.setAttribute('slides-per-view', '2');
+            } else {
+                swiperElement.setAttribute('slides-per-view', '3');
+            }
+            // Aggiorna il swiper dopo aver cambiato l'attributo
+            if (swiperElement.swiper) {
+                swiperElement.swiper.update();
+            }
         }
+    }
 
+    // Chiama la funzione all'avvio
+    updateSwiperSlides();
+
+    // Aggiungi listener per il resize della finestra
+    window.addEventListener('resize', updateSwiperSlides);
+
+    if (swiperElement) {
         // Collega le frecce personalizzate al swiper web component
         if (prevButton) {
             prevButton.addEventListener('click', () => {
