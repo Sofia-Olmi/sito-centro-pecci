@@ -23,26 +23,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Swiper inizializzato correttamente');
 
- // Connetti slider verticale a quello orizzontale
-const wrapper = document.getElementById('verticalSliderWrapper');
-let currentIndex = 0;
-wrapper.style.transform = 'translateY(0)';
-
-swiper.on('slideChange', function() {
-    currentIndex = swiper.realIndex;
+    // Connetti slider verticale a quello orizzontale
+    const wrapper = document.getElementById('verticalSliderWrapper');
+    const container = document.getElementById('verticalSliderContainer');
+    let currentIndex = 0;
     
-    // Calcola la posizione basandosi sulla larghezza dello schermo
-    const isMobile = window.innerWidth <= 768;
-    const slideHeight = isMobile ? 300 : 450;
+    function updateVerticalSlider() {
+        const isMobile = window.innerWidth <= 768;
+        const slideHeight = isMobile ? 300 : 450;
+        wrapper.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
+    }
     
-    wrapper.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
-});
+    updateVerticalSlider();
 
-// Aggiorna anche al resize della finestra
-window.addEventListener('resize', function() {
-    const isMobile = window.innerWidth <= 768;
-    const slideHeight = isMobile ? 300 : 450;
-    wrapper.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
+    // Sincronizza con swiper orizzontale
+    swiper.on('slideChange', function() {
+        currentIndex = swiper.realIndex;
+        updateVerticalSlider();
+    });
+
+    // Aggiorna al resize
+    window.addEventListener('resize', updateVerticalSlider);
+
+    // Aggiungi controllo manuale con le frecce dello swiper
+    const nextBtn = document.querySelector('.swiper-button-next');
+    const prevBtn = document.querySelector('.swiper-button-prev');
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            swiper.slideNext();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            swiper.slidePrev();
+        });
+    }
 });
 
 
