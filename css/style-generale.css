@@ -189,6 +189,7 @@ a.underline.hover-bianco:hover{
     width: auto;
     height: calc(80px - 1rem);
     object-fit: contain;
+    min-width: 50px;
 }
 
 .menu li{
