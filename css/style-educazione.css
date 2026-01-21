@@ -122,9 +122,8 @@ h3{
     position: absolute;
     right: 15px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(90deg);
     pointer-events: none;
-    fill: #000;
 }
 
 /* .box-ricerca select::after{
