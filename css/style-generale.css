@@ -447,12 +447,11 @@ a.underline.hover-bianco:hover{
     /* margin-bottom: 8px;
     font-weight: bold; */
 }
-.form-control2, .form-select{
+.form-control2{
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 8px;
     border: 3px solid #ffffff;
-    border-radius: 3px;
     font-size: 16px;
     background: #ffffff;
     transition: border-color 0.3s;
@@ -479,7 +478,6 @@ a.underline.hover-bianco:hover{
     background-color: #ffffff;
     border: none;
     padding: 5px 10px;
-    border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;

@@ -23,15 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Swiper inizializzato correttamente');
 
-    // Connetti slider verticale a quello orizzontale
-    const wrapper = document.getElementById('verticalSliderWrapper');
-    let currentIndex = 0;
-    wrapper.style.transform = 'translateY(0)';
+ // Connetti slider verticale a quello orizzontale
+const wrapper = document.getElementById('verticalSliderWrapper');
+let currentIndex = 0;
+wrapper.style.transform = 'translateY(0)';
 
-    swiper.on('slideChange', function() {
-        currentIndex = swiper.realIndex;
-        wrapper.style.transform = `translateY(-${currentIndex * 300}px)`;
-    });
+swiper.on('slideChange', function() {
+    currentIndex = swiper.realIndex;
+    
+    // Calcola la posizione basandosi sulla larghezza dello schermo
+    const isMobile = window.innerWidth <= 768;
+    const slideHeight = isMobile ? 300 : 450;
+    
+    wrapper.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
+});
+
+// Aggiorna anche al resize della finestra
+window.addEventListener('resize', function() {
+    const isMobile = window.innerWidth <= 768;
+    const slideHeight = isMobile ? 300 : 450;
+    wrapper.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
 });
 
 
