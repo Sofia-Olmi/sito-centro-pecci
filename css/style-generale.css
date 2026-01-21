@@ -456,10 +456,12 @@ a.underline.hover-bianco:hover{
     background: #ffffff;
     transition: border-color 0.3s;
 }
-.form-control2:hover{
+
+.form-control2:hover,
+.form-control2:focus {
     border-color: #ef7a61;
     outline: none;
-}   
+} 
 
 .email-wrapper {
     position: relative;
