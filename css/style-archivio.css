@@ -45,3 +45,47 @@
     background-color: #ff8ec8;
     color: #000000;
 }
+
+/* Responsività per la prima riga come in mostre */
+@media (max-width: 1245px) {
+    .riga1 {
+        min-height: 114px;
+    }
+
+    .riga1 .col-md-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .riga1 .col-md-3 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .icona-archivio {
+        height: 69px;
+        width: auto;
+    }
+
+    .riga1 .titolo {
+        margin: 0 !important;
+    }
+
+    .riga1 .titoletto {
+        margin: 0 !important;
+    }
+}
+
+/* Responsività per i box come in educazione: 2 per riga su tablet, 1 su mobile, 3 su desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .col-md-4 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .icona-archivio {
+        height: auto;
+        width: auto;
+        max-width: 322px;
+    }
+}
