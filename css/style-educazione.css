@@ -33,7 +33,8 @@
     cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: #ffffff;
 }
 

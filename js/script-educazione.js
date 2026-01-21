@@ -41,4 +41,41 @@ document.addEventListener('DOMContentLoaded', function() {
         equalizeHeights();
         filterizr.render();
     });
+
+    // Handle nav-link clicks for active state and filtering
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Remove active class from all nav-links
+            navLinks.forEach(l => l.classList.remove('active'));
+            // Add active class to clicked link
+            this.classList.add('active');
+            // Get filter value and apply filter
+            const filterValue = this.getAttribute('data-filter');
+            filterizr.filter(filterValue);
+            // Re-equalize heights after filtering
+            equalizeHeights();
+        });
+    });
+
+    // Check URL parameters for filter and set active accordingly
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    if (filterParam) {
+        const targetLink = document.querySelector(`.nav-link[data-filter="${filterParam}"]`);
+        if (targetLink) {
+            targetLink.classList.add('active');
+            filterizr.filter(filterParam);
+            equalizeHeights();
+        } else {
+            // Fallback to default if invalid filter
+            navLinks[0].classList.add('active');
+        }
+    } else {
+        // Set default active state on "Tutti" (first nav-link) if no param
+        if (navLinks.length > 0) {
+            navLinks[0].classList.add('active');
+        }
+    }
 });
