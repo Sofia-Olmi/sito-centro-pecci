@@ -1070,6 +1070,54 @@ details.open summary::after {
             background-color: #FFD34D;
         }
 
+        /* Tooltip mobile - posizionamento a destra */
+@media (max-width: 768px) {
+    .info-tooltip {
+        bottom: auto;
+        left: auto;
+        right: auto;
+        top: 50%;
+        left: calc(100% + 10px);
+        transform: translateY(-50%);
+        white-space: normal;
+        width: 200px;
+        max-width: calc(100vw - 80px);
+    }
+
+    /* Freccia del tooltip a sinistra per mobile */
+    .info-tooltip::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: auto;
+        right: 100%;
+        transform: translateY(-50%);
+        border: 6px solid transparent;
+        border-right-color: #FFD34D;
+        border-top-color: transparent;
+    }
+
+    /* Aggiustamenti per il lightbox mobile */
+    .lightbox-content {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .counter-value {
+        width: 50px;
+        font-size: 16px;
+    }
+
+    .counter-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
         /* Icona calendario in Chrome, Safari, Edge */
         /* input[type="date"]::-webkit-calendar-picker-indicator {
             cursor: pointer;
