@@ -92,4 +92,9 @@
             .col-12.col-md-4 img {
                 margin-bottom: 1rem;
             }
+            .riga1-cinema {
+            height: 114px;
+            min-height: auto;
+            padding: 0;
+            }
         }
