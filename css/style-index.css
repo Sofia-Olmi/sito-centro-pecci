@@ -227,10 +227,6 @@ body {
 
 
 /* STILE SWIPER EVENTI */
-.bg-grigio:has(swiper-container) {
-    margin-top: 4rem;
-    padding-bottom: 4rem;
-}
 
 .col-md-6.position-relative {
     position: relative;
