@@ -175,7 +175,7 @@ a.underline.hover-bianco:hover{
 
 .header .navlist{
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 .header .img-wrapper{
@@ -249,12 +249,11 @@ a.underline.hover-bianco:hover{
     fill: #000000;
 }
 
-.chiudi-header svg {
-    pointer-events: none;
+.chiudi-header svg:hover {
+    /* filter: brightness(0) saturate(100%) invert(33%) sepia(6%) saturate(282%) hue-rotate(169deg) brightness(95%) contrast(89%);} */
+    transform: rotate(180deg);
+    cursor: pointer;
 }
-
-.chiudi-header:hover {
-    filter: brightness(0) saturate(100%) invert(33%) sepia(6%) saturate(282%) hue-rotate(169deg) brightness(95%) contrast(89%);}
 
 .hamburger-icon{
     cursor: pointer;
