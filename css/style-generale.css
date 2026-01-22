@@ -818,6 +818,25 @@ details.open summary::after {
     }
 }
 
+
+/* BOTTONE PRENOTA HEADER */
+.bottone-prenota-header {
+    margin-top: 20px;
+    background-color: #000000;
+    display: inline-block;
+    padding: 15px 20px;
+    transition: background-color 0.2s ease;
+    width: fit-content;
+}
+.bottone-prenota-header a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: transparent;
+}
+
+
+
 /* ----------------------LIGHTBOX BIGLIETTI---------------------- */
 /* * {
             margin: 0;
@@ -920,6 +939,15 @@ details.open summary::after {
             padding: 0;
             width: 35px;
             height: 35px;
+        }
+
+        .close-btn svg {
+        pointer-events: none;
+        transition: color 0.2s;
+        }
+
+        .close-btn:hover svg {
+        color: #FFD34D;
         }
 
         .form-row {
