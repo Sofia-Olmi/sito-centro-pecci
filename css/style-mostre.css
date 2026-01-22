@@ -1,190 +1,228 @@
- .header-mostre {
-            min-height: 445px;
-        }
+.icona-mostre{
+    max-width: 100%;
+    width: 220px;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-        .contenuto-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 445px;
-            gap: 2rem;
-            padding: 0 15px;
-        }
+.header-mostre {
+    min-height: 445px;
+}
 
-        .sezione-sinistra {
-            flex: 0 0 60%;
-        }
+.contenuto-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 445px;
+    gap: 2rem;
+    padding: 0 15px;
+}
 
-        .sezione-destra {
-            flex: 0 0 35%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.sezione-sinistra {
+    flex: 0 0 60%;
+}
 
-        .titolo-cinema{
-            margin: 0 0 1rem 0 !important;
-            line-height: 1.2; 
-        }
+.sezione-destra {
+    flex: 0 0 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .titoletto-cinema{
-            margin: 0 !important;
-            line-height: 27.5px;
-        }
+.titolo-cinema{
+    margin: 0 0 1rem 0 !important;
+    line-height: 1.1; 
+}
 
-        .sottotitolo-cinema{
-            line-height: 1.4; 
-        }
+.titoletto-cinema{
+    margin: 0 !important;
+    line-height: 1.2;
+}
 
-        .testo-cinema{
-            line-height: 22px; 
-        }
-        .underline {
-            text-decoration: underline;
-        }
-        .icona-mostre{
-            max-width: 100%;
-            width: 220px;
-            height: auto;
-        }
+.sottotitolo-cinema{
+    line-height: 1.2; 
+}
 
-        /* STILE SWIPER EVENTI */
-        .bg-grigio:has(swiper-container) {
-            margin-top: 4rem;
-            padding-bottom: 4rem;
-        }
+.testo-cinema{
+    line-height: 1.3; 
+}
 
-        .col-md-6.position-relative {
-            position: relative;
-        }
+.underline {
+    text-decoration: underline;
+}
 
-        swiper-container {
-            width: 100%;
-            height: 100%;
-            padding: 0 50px;
-            position: relative;
-        }
-        
-        /* Nascondi swiper su mobile */
-        @media (max-width: 767px) {
-            swiper-container,
-            .swiper-button-prev-custom,
-            .swiper-button-next-custom,
-            .col-md-6.position-relative {
-                display: none !important;
-            }
-        }
+/* STILE SWIPER EVENTI */
+.bg-grigio:has(swiper-container) {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
 
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: stretch;
-            height: auto;
-        }
+.col-md-6.position-relative {
+    position: relative;
+}
 
-        .slide-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
+swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    position: relative;
+}
 
-        swiper-slide img {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            flex-shrink: 0;
-        }
+/* Nascondi swiper su mobile */
+@media (max-width: 767px) {
+    swiper-container,
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom,
+    .col-md-6.position-relative {
+        display: none !important;
+    }
+}
 
-        .slide-info {
-            background-color: #ffffff;
-            padding: 1.5rem;
-            text-align: left;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
 
-        .slide-info .underline {
-            margin-top: auto;
-        }
+.slide-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-        /* Frecce personalizzate */
-        .swiper-button-prev-custom,
-        .swiper-button-next-custom {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            cursor: pointer;
-            color: #000;
-            transition: color 0.3s ease;
-        }
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
-        .swiper-button-prev-custom:hover,
-        .swiper-button-next-custom:hover {
-            color: #535456;
-        }
+.slide-info {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-        /* Freccia sinistra: appena prima dello swiper */
-        .swiper-button-prev-custom {
-            left: 0;
-        }
+.slide-info .underline {
+    margin-top: auto;
+}
 
-        /* Freccia destra: appena dopo lo swiper */
-        .swiper-button-next-custom {
-            right: 0;
-        }
+/* Frecce personalizzate */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s ease;
+}
 
-        /* NUOVI STILI PER MOBILE */
-        @media (max-width: 1245px) {
-            .header-mostre {
-                min-height: 114px;
-            }
-            
-            .contenuto-header {
-                min-height: 114px;
-            }
-            
-            .icona-mostre {
-                height: 69px;
-                width: auto;
-            }
-            
-            .sezione-destra {
-                flex: 0 0 50%;
-            }
-            
-            .sezione-sinistra {
-                flex: 0 0 50%;
-            }
-            
-            /* Rimuove spazi tra testi */
-            .titolo {
-                margin: 0 !important;
-            }
-            
-            .sottotitolo {
-                margin: 0 !important;
-            }
-            
-            .underline {
-                margin-top: 0.5rem !important;
-                margin-bottom: 1rem !important;
-            }
-            
-            /* Spazio sotto ogni immagine */
-            .col-12.col-md-8 img,
-            .col-12.col-md-4 img {
-                margin-bottom: 1rem;
-            }
-            .riga1-mostre {
-            height: 114px;
-            min-height: auto;
-            padding: 0;
-            }
-        }
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    color: #535456;
+}
+
+/* Freccia sinistra: appena prima dello swiper */
+.swiper-button-prev-custom {
+    left: 0;
+}
+
+/* Freccia destra: appena dopo lo swiper */
+.swiper-button-next-custom {
+    right: 0;
+}
+
+/* NUOVI STILI PER MOBILE */
+@media (max-width: 1245px) {
+    .header-mostre {
+        min-height: 114px;
+    }
+    
+    .contenuto-header {
+        min-height: 114px;
+    }
+    
+    .icona-mostre {
+        height: 69px;
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Nasconde la descrizione in mobile */
+    .riga1-mostre .titoletto {
+        display: none !important;
+    }
+    
+    .sezione-destra {
+        flex: 0 0 50%;
+    }
+    
+    .sezione-sinistra {
+        flex: 0 0 50%;
+    }
+    
+    /* Rimuove spazi tra testi */
+    .titolo {
+        margin: 0 !important;
+    }
+    
+    .sottotitolo {
+        margin: 0 !important;
+    }
+    
+    .underline {
+        margin-top: 0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Spazio sotto ogni immagine solo in mobile quando sono in colonna */
+    .bg-grigio .row.g-0 .col-12 img {
+        margin-bottom: 0;
+    }
+    
+    /* Ripristina margine quando il testo è sotto l'immagine (order-2) */
+    .bg-grigio .row.g-0 .order-2 + .order-1 img,
+    .bg-grigio .row.g-0 .order-1 img {
+        margin-bottom: 1rem;
+    }
+    
+    .riga1-mostre {
+        height: 114px;
+        min-height: auto;
+        padding: 0;
+    }
+    
+    /* Riduce dimensione titolo e aggiunge padding in mobile */
+    .riga1-mostre .titolo {
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* Riduce proporzionalmente i testi delle row 2-6 */
+    .bg-grigio .titolo {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    
+    .bg-grigio .sottotitolo {
+        font-size: 0.9rem;
+    }
+    
+    .bg-grigio .underline {
+        font-size: 0.9rem;
+    }
+}
