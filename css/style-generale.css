@@ -249,6 +249,13 @@ a.underline.hover-bianco:hover{
     fill: #000000;
 }
 
+.chiudi-header svg {
+    pointer-events: none;
+}
+
+.chiudi-header:hover {
+    filter: brightness(0) saturate(100%) invert(33%) sepia(6%) saturate(282%) hue-rotate(169deg) brightness(95%) contrast(89%);}
+
 .hamburger-icon{
     cursor: pointer;
     margin-bottom: -12px;
@@ -942,13 +949,15 @@ details.open summary::after {
         }
 
         .close-btn svg {
-        pointer-events: none;
-        transition: color 0.2s;
+            pointer-events: none;
+            transition: fill 0.2s, stroke 0.2s;
         }
 
         .close-btn:hover svg {
-        color: #FFD34D;
+            fill: #FFD34D;
+            stroke: #FFD34D;
         }
+
 
         .form-row {
             display: flex;
