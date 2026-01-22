@@ -1,6 +1,4 @@
 .riga1 {
-    display: flex;
-    align-items: center;
     min-height: 400px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -46,33 +44,17 @@
     color: #000000;
 }
 
-/* Responsività per la prima riga come in mostre */
-@media (max-width: 1245px) {
+/* Responsività per la prima riga come in educazione */
+@media (max-width: 768px) {
     .riga1 {
-        min-height: 114px;
-    }
-
-    .riga1 .col-md-6 {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-    }
-
-    .riga1 .col-md-3 {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
+        height: 114px;
+        min-height: auto;
+        padding: 0;
     }
 
     .icona-archivio {
         height: 69px;
         width: auto;
-    }
-
-    .riga1 .titolo {
-        margin: 0 !important;
-    }
-
-    .riga1 .titoletto {
-        margin: 0 !important;
     }
 }
 
