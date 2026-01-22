@@ -233,7 +233,7 @@ const counters = {
 
         function submitForm(e) {
             e.preventDefault();
-            alert('Form inviato! Totale biglietti: ' + 
+            alert('Ti aspettiamo al Centro Pecci! \n\nForm inviato! Totale biglietti: ' + 
                   (counters.intero + counters.ridotto + counters.famiglie));
             closeLightbox();
         }

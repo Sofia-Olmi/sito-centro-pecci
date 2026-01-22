@@ -441,7 +441,7 @@ a.underline.hover-bianco:hover{
     height: 300px;
     opacity: 1;
     padding-bottom: 1.5rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 
