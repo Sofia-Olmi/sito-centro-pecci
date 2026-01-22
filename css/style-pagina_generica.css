@@ -28,21 +28,7 @@
     background-color: transparent;
 }
 
-/* BOTTONE PRENOTA HEADER */
-.bottone-prenota-header {
-    margin-top: 20px;
-    background-color: #000000;
-    display: inline-block;
-    padding: 15px 20px;
-    transition: background-color 0.2s ease;
-    width: fit-content;
-}
-.bottone-prenota-header a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-    background-color: transparent;
-}
+
 
 /* Colore testo bottone in base alla sezione attiva */
 .voci-header:has(.nav-1.d-flex) .bottone-prenota-header a {

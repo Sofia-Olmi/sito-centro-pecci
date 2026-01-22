@@ -1,6 +1,8 @@
 .icona-eventi {
     max-width: 322px;
     height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .header-mostre {
@@ -44,6 +46,13 @@
     .icona-eventi {
         height: 69px;
         width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Nasconde la descrizione in mobile */
+    .riga1-eventi .titoletto {
+        display: none !important;
     }
     
     .sezione-destra {
@@ -52,6 +61,11 @@
     
     .sezione-sinistra {
         flex: 0 0 50%;
+    }
+    
+    /* Centra verticalmente il titolo "Eventi" */
+    .riga1-eventi .col-6.h-100.d-flex {
+        align-items: center !important;
     }
     
     /* Rimuove spazi tra testi */
@@ -68,9 +82,41 @@
         margin-bottom: 1rem !important;
     }
     
-    /* Spazio sotto ogni immagine */
-    .col-12.col-md-8 img,
-    .col-12.col-md-4 img {
-        margin-bottom: 1rem;
+    /* Spazio sotto ogni immagine solo in mobile quando sono in colonna */
+    .bg-grigio .row.g-0 .col-12 img {
+        margin-bottom: 0;
+    }
+    
+    /* Ripristina margine quando il testo è sotto l'immagine (order-2) */
+    .bg-grigio .row.g-0 .order-2 + .order-1 img,
+    .bg-grigio .row.g-0 .order-1 img {
+        margin-bottom: 3rem;
+    }
+    
+    .riga1-eventi {
+        height: 114px;
+        min-height: auto;
+        padding: 0;
+    }
+    
+    /* Riduce dimensione titolo e aggiunge padding in mobile */
+    .riga1-eventi .titolo {
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* Riduce proporzionalmente i testi delle row 2-6 */
+    .bg-grigio .titolo {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    
+    .bg-grigio .sottotitolo {
+        font-size: 0.9rem;
+    }
+    
+    .bg-grigio .underline {
+        font-size: 0.9rem;
     }
 }
