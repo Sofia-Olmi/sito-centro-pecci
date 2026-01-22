@@ -444,6 +444,40 @@ a.underline.hover-bianco:hover{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo header desktop */
+.header .img-wrapper img{
+    width: auto;
+    height: calc(80px - 1rem);
+    object-fit: contain;
+    min-width: 50px;
+}
+
+/* Header e logo mobile - più grande */
+@media (max-width: 1199px) {
+    .header {
+        height: 100px; /* Aumenta l'altezza dell'header */
+    }
+    
+    .header .img-wrapper {
+        padding-top: 0.5rem !important; /* Aggiunge spazio sopra */
+    }
+    
+    .header .img-wrapper img {
+        height: 70px; /* Altezza fissa grande */
+        width: auto; /* Larghezza automatica per mantenere proporzioni */
+        min-width: 100px; /* Larghezza minima */
+    }
+    
+    .margine-header {
+        margin-top: 120px; /* Margine uguale all'altezza dell'header */
+    }
+    
+    /* Icona hamburger */
+    .hamburger-icon {
+        height: 40px;
+        width: 40px;
+    }
+}
 
 /* ----------------------STILE FOOTER---------------------- */
 .hover-voci-footer:hover{
