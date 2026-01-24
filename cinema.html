@@ -24,10 +24,13 @@
     <div class="row bg-bianco pb-3">
         <div class="col-2">
             <div class="img-wrapper p-2">
-                <a href="index.html"><img src="img/img_generale/logo.png" class="img-fluid" alt="Home"></a>
+                <a href="index.html">
+                    <img src="img/img_generale/logo.webp" class="img-fluid d-none d-xl-block" alt="Home">
+                    <img src="img/img_generale/logo_mobile.webp" class="img-fluid d-xl-none" alt="Home">
+                </a>
             </div>
         </div>
-        <div class="col-8 offset-1 d-none d-xl-flex align-items-end">
+        <div class="col-8 d-none d-xl-flex align-items-end">
             <ul class="navlist menu">
                 <li class="nav-1 titoletto">Cosa fare</li>
                 <li class="nav-2 titoletto">Visita</li>
@@ -36,8 +39,8 @@
                 <li class="nav-5 titoletto">Centro Pecci</li>
             </ul>
         </div>
-        <div class="col-1 d-none d-xl-flex align-items-end chiudi-header">
-            <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="col-1 d-none d-xl-flex justify-content-end align-items-end chiudi-header pb-1">
+            <svg class="chiudi-icona" xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         </div>
         <div class="col-10 d-flex d-xl-none justify-content-end align-items-center">
             <svg class="me-3 hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#000"><path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z"/></svg>
@@ -81,7 +84,7 @@
         </div>
         <div class="col-4">
             <div class="blocco-info">
-                <a class="titoletto">Aperto dal mercoledì alla domenica
+                <p class="titoletto">Aperto dal mercoledì alla domenica
                 dalle 10:00 alle 19:00.</p>
                 <p>Viale della Repubblica 277,
                 59100, Prato, Tuscany (Italy)</p>
@@ -282,13 +285,6 @@
                 <div>
                 <p href="#" onclick="openLightbox(); return false;" class="bottone-prenota-accordion titoletto">
                     <a>Prenota</a>
-                    <!-- <?xml version="1.0" encoding="UTF-8"?>
-                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                        <line class="cls-1" x1="16.5" y1="31.5" x2="16.5" y2="1.5"/>
-                        <line class="cls-1" x1="31.5" y1="16.5" x2="1.5" y2="16.5"/>
-                    </g>
-                    </svg> -->
                 </p>
                 </div>
                 <div class="corpo ms-3">Aperto dal mercoledì alla domenica dalle 10:00 alle 19:00.</div>
@@ -296,6 +292,7 @@
         </div>
     </div>
 </div>
+<!-- FINE HEADER ACCORDION LIGHTBOX  -->
 
 
 <!-- ROW 1 -->
