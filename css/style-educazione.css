@@ -181,6 +181,12 @@ h3{
   }
 }
 
+@media (max-width: 1200px) {
+    .nav-list-container{
+    top: 61px;
+    }
+  }
+
 @media (min-width: 1200px) {
     .filtr-item {
     flex: 0 0 auto;
