@@ -336,15 +336,15 @@
     <!-- CONTENUTO PRINCIPALE -->
     <div class="container-fluid margine-header px-4">
         <div class="row" id="TARIFFE">
-            <div class="col-lg-3 px-0 px-lg-2">
-                <div class="px-0 box-sticky">
-                    <div class="col-6 col-lg-auto">
-                    <p class="sottotitolo">TARIFFE</p>
-                    <br>
+            <div class="col-lg-3 px-2 px-lg-4">
+                <div class="px-0 box-sticky mb-4 mb-lg-0">
+                    <div class="col-6 col-lg-auto d-flex flex-column">
+                    <p class="sottotitolo order-last order-lg-first">TARIFFE</p>
+                    <br class="d-none d-lg-block">
                     <p class="sottotitolo color-grigio-scuro">Intero 10€ <br> Ridotto 7€ <br> Famiglie 20€</p>
                     <br>
                     </div>
-                    <div class="col-6 col-lg-auto">
+                    <div class="col-6 col-lg-auto d-flex flex-column justify-content-end">
                     <p>(ingresso unico per massimo 2 adulti e massimo 3 minori di 15 anni)</p>
                     <br><a href="#" class="underline hover-giallo" onclick="openLightbox(); return false;">Acquista ora</a>
                     </div>
@@ -352,108 +352,118 @@
             </div>
 <!-- riduzioni desktop -->
             <div class="col-lg-6 offset-lg-2 px-0">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row bg-bianco p-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Riduzioni</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Sotto i 26 anni e sopra i 65 anni</li>
-                                <li>Gruppi organizzati (min. 12 persone) con prenotazione</li>
-                                <li>Studenti</li>
-                                <li>Soci UniCoop Firenze</li>
-                                <li>FAI, soci Touring Club</li>
-                                <li>Possessori Edumuseicard</li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Insegnanti e studenti universitari di materie artistiche, architettoniche e delle Accademie di Belle Arti</li>
-                                <li>Utenti GreenApes</li>
-                                <li>Possessori della Card "Riparti con Coin"</li>
-                                <li>Possessori biglietto Fondazione Pistoia Musei, Fondazione Palazzo Strozzi, Gallerie d'Italia</li>
-                            </ul>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Riduzioni</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Sotto i 26 anni e sopra i 65 anni</li>
+                                            <li>Gruppi organizzati (min. 12 persone) con prenotazione</li>
+                                            <li>Studenti</li>
+                                            <li>Soci UniCoop Firenze</li>
+                                            <li>FAI, soci Touring Club</li>
+                                            <li>Possessori Edumuseicard</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Insegnanti e studenti universitari di materie artistiche, architettoniche e delle Accademie di Belle Arti</li>
+                                            <li>Utenti GreenApes</li>
+                                            <li>Possessori della Card "Riparti con Coin"</li>
+                                            <li>Possessori biglietto Fondazione Pistoia Musei, Fondazione Palazzo Strozzi, Gallerie d'Italia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                     <div class="row bg-bianco p-4 mt-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Omaggi</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Sotto i 6 anni</li>
-                                <li>Soci del Centro (+ sconto 10% bistrot e bookshop)</li>
-                                <li>Possessori Pratomusei Card</li>
-                                <li>Possessori Firenze card</li>
-                                <li>Membership card: Castello di Rivoli - Museo di Arte Contemporanea, Fondazione Sandretto Re Rebaudengo, 
-                                    Galleria d'Arte Moderna e contemporanea di Bergamo, MART - Museo di Arte Moderna e Contemporanea di Trento e 
-                                    Rovereto, Peggy Guggenheim Collection, Fondazione Pistoia Musei e Fondazione Palazzo Strozzi (+ sconto del 10% 
-                                    sulle pubblicazioni del Centro Pecci)</li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Amici del Museo Pecci</li>
-                                <li>Visitatori con disabilità + accompagnatore</li>
-                                <li>Giornalisti</li>
-                                <li>Soci ICOM (+ sconto del 10% catalogo e merchandising)</li>
-                                <li>Guide turistiche nell'esercizio della loro attività professionale</li>
-                                <li>Ai soggetti che ne facciano richiesta per periodi determinati per ragioni di studio e di ricerca finalizzate 
-                                    alla pubblicazione, attestate da istituzioni scolastiche o universitarie, da accademie, da istituti di ricerca e 
-                                    di cultura italiani o stranieri, da organi del Ministero per i Beni e le Attività culturali</li>
-                            </ul>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Omaggi</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Sotto i 6 anni</li>
+                                            <li>Soci del Centro (+ sconto 10% bistrot e bookshop)</li>
+                                            <li>Possessori Pratomusei Card</li>
+                                            <li>Possessori Firenze card</li>
+                                            <li>Membership card: Castello di Rivoli - Museo di Arte Contemporanea, Fondazione Sandretto Re Rebaudengo,
+                                                Galleria d'Arte Moderna e contemporanea di Bergamo, MART - Museo di Arte Moderna e Contemporanea di Trento e
+                                                Rovereto, Peggy Guggenheim Collection, Fondazione Pistoia Musei e Fondazione Palazzo Strozzi (+ sconto del 10%
+                                                sulle pubblicazioni del Centro Pecci)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Amici del Museo Pecci</li>
+                                            <li>Visitatori con disabilità + accompagnatore</li>
+                                            <li>Giornalisti</li>
+                                            <li>Soci ICOM (+ sconto del 10% catalogo e merchandising)</li>
+                                            <li>Guide turistiche nell'esercizio della loro attività professionale</li>
+                                            <li>Ai soggetti che ne facciano richiesta per periodi determinati per ragioni di studio e di ricerca finalizzate
+                                                alla pubblicazione, attestate da istituzioni scolastiche o universitarie, da accademie, da istituti di ricerca e
+                                                di cultura italiani o stranieri, da organi del Ministero per i Beni e le Attività culturali</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                     <div class="row bg-bianco p-4 mt-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Convenzioni</p>
-                            <br>
-                        </div>
-                        <div class="col-12">
-                            <ul class="puntato">
-                                <li class="titoletto">Prato card</li>
-                                <br>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <p>Prato Card è l'offerta speciale per i quattro principali musei della città: Museo di Palazzo Pretorio, Museo del 
-                                Tessuto, Musei Diocesani e Centro per l’Arte Contemporanea Luigi Pecci. Un vero e proprio passepartout culturale 
-                                dedicato alle esperienze museali.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Prato Card 4: 16€. Quattro musei in quattro giorni. Pensata per chi è in città per un soggiorno più o meno breve <br>
-                                Prato Card Family: 28 €. Una famiglia, quattro musei in quattro giorni. Rivolta alle famiglie con 2 adulti e figli 
-                                under 14 <br>
-                                Prato Card 365: 20€. Musei tutto l'anno. Pensata per chi abita quì o ci viene periodicamente, può approfondire e vivere 
-                                appieno le proposte culturali<br>
-                                Prato Card Young: 10€. Musei tutto l'anno, per giovani fino a 25 anni. <br>
-                                Prato Card è acquistabile nelle biglietterie dei quattro musei, oppure on line cliccando qui. Scopri come funziona 
-                                sul sito ufficiale di Prato Musei.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row bg-bianco p-4">
-                        <div class="col-12">
-                            <ul class="puntato">
-                                <li class="titoletto">Firenzecard</li>
-                                <br>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <p>Firenzecard è il pass ufficiale della città di Firenze, che permette di visitare una sola volta tutti i musei, chiese, 
-                                ville e giardini storici aderenti al Circuito. La card è nominale e ha validità 72 ore.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Firenzecard: 85€ <br>
-                                Scopri come funziona sul sito ufficiale di Firenzecard.
-                            </p>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Convenzioni</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-12">
+                                        <ul class="puntato">
+                                            <li class="titoletto">Prato card</li>
+                                            <br>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Prato Card è l'offerta speciale per i quattro principali musei della città: Museo di Palazzo Pretorio, Museo del
+                                            Tessuto, Musei Diocesani e Centro per l’Arte Contemporanea Luigi Pecci. Un vero e proprio passepartout culturale
+                                            dedicato alle esperienze museali.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Prato Card 4: 16€. Quattro musei in quattro giorni. Pensata per chi è in città per un soggiorno più o meno breve <br>
+                                            Prato Card Family: 28 €. Una famiglia, quattro musei in quattro giorni. Rivolta alle famiglie con 2 adulti e figli
+                                            under 14 <br>
+                                            Prato Card 365: 20€. Musei tutto l'anno. Pensata per chi abita quì o ci viene periodicamente, può approfondire e vivere
+                                            appieno le proposte culturali<br>
+                                            Prato Card Young: 10€. Musei tutto l'anno, per giovani fino a 25 anni. <br>
+                                            Prato Card è acquistabile nelle biglietterie dei quattro musei, oppure on line cliccando qui. Scopri come funziona
+                                            sul sito ufficiale di Prato Musei.
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="puntato">
+                                            <li class="titoletto">Firenzecard</li>
+                                            <br>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Firenzecard è il pass ufficiale della città di Firenze, che permette di visitare una sola volta tutti i musei, chiese, 
+                                            ville e giardini storici aderenti al Circuito. La card è nominale e ha validità 72 ore.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Firenzecard: 85€ <br>
+                                            Scopri come funziona sul sito ufficiale di Firenzecard.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -462,44 +472,48 @@
     </div>
     <div class="container-fluid margine-header mb-3 px-4">
         <div class="row " id="VISITE">
-            <div class="col-lg-3 px-0 px-lg-2">
-                <div class="px-0 box-sticky">
-                    <div class="col-6 col-lg-auto">
-                    <p class="sottotitolo">VISITE GUIDATE</p>
-                    <br>
+            <div class="col-lg-3 px-2 px-lg-4">
+                <div class="px-0 box-sticky mb-4 mb-lg-0">
+                    <div class="col-6 col-lg-auto d-flex flex-column">
+                    <p class="sottotitolo order-last order-lg-first">VISITE GUIDATE</p>
+                    <br class="d-none d-lg-block">
                     <p class="sottotitolo color-grigio-scuro">Intero 10€ <br> Ridotto 7€ <br> Famiglie 20€</p>
                     <br>
                     </div>
-                    <div class="col-6 col-lg-auto">
+                    <div class="col-6 col-lg-auto d-flex flex-column justify-content-end">
                     <p>(ingresso unico per massimo 2 adulti e massimo 3 minori di 15 anni)</p>
                     <br><a href="#" class="underline hover-giallo" onclick="openLightbox(); return false;">Acquista ora</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-2 px-0">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row bg-bianco p-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Riduzioni</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Sotto i 26 anni e sopra i 65 anni</li>
-                                <li>Gruppi organizzati (min. 12 persone) con prenotazione</li>
-                                <li>Studenti</li>
-                                <li>Soci UniCoop Firenze</li>
-                                <li>FAI, soci Touring Club</li>
-                                <li>Possessori Edumuseicard</li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="puntato">
-                                <li>Insegnanti e studenti universitari di materie artistiche, architettoniche e delle Accademie di Belle Arti</li>
-                                <li>Utenti GreenApes</li>
-                                <li>Possessori della Card "Riparti con Coin"</li>
-                                <li>Possessori biglietto Fondazione Pistoia Musei, Fondazione Palazzo Strozzi, Gallerie d'Italia</li>
-                            </ul>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Riduzioni</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Sotto i 26 anni e sopra i 65 anni</li>
+                                            <li>Gruppi organizzati (min. 12 persone) con prenotazione</li>
+                                            <li>Studenti</li>
+                                            <li>Soci UniCoop Firenze</li>
+                                            <li>FAI, soci Touring Club</li>
+                                            <li>Possessori Edumuseicard</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="puntato">
+                                            <li>Insegnanti e studenti universitari di materie artistiche, architettoniche e delle Accademie di Belle Arti</li>
+                                            <li>Utenti GreenApes</li>
+                                            <li>Possessori della Card "Riparti con Coin"</li>
+                                            <li>Possessori biglietto Fondazione Pistoia Musei, Fondazione Palazzo Strozzi, Gallerie d'Italia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -508,7 +522,7 @@
     </div>
     <div class="container-fluid margine-header mb-3 px-4">
         <div class="row" id="COME">
-            <div class="col-lg-3 px-0 px-lg-2">
+            <div class="col-lg-3 px-2 px-lg-4">
                 <div class="px-0 box-sticky flex-wrap">
                     <p class="sottotitolo col-12 mb-4 mb-lg-0">COME ARRIVARE</p>
                     <br>
@@ -516,80 +530,96 @@
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-2 px-0">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row bg-bianco p-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Bus Urbano 1+</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Dalla stazione ferroviaria Prato Centrale prendi il bus urbano di AT, linea 1+ in direzione Centro Pecci / Repubblica 
-                                (fermata Centro Pecci).
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Gli autobus AT dispongono di pedana ribassabile per l'accesso con carrozzina e di segnale acustico per le fermate.
-                                Si consiglia di verificare orari e servizi tramite il sito di AT.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row bg-bianco p-4 mt-4">
-                        <div class="col-12">
-                            <p class="sottotitolo">Bus Extraurbano R1</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Dalla stazione ferroviaria Firenze Santa Maria Novella prendi la Tramvia T2 da Alamanni-Stazione in direzione Peretola 
-                                Aeroporto fino al capolinea. Da qui prendere il pullmann extraurbano linea R1 di Autolinee Toscane diretto a PRATO, 
-                                fino alla fermata Questura. Tutti i tram in servizio a Firenze e tutte le pensiline sono accessibili ai passeggeri 
-                                con difficoltà motorie o visive.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Si consiglia di verificare orari e servizi tramite il sito di AT.
-                                Per le linee extraurbane è disponibile un servizio di fermate bus accessibili e autobus attrezzati per il trasporto di 
-                                persone con disabilità, su prenotazione. Si consiglia di prenotare tramite i canali di AT.
-                            </p>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Bus Urbano 1+</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <p>
+                                            Dalla stazione ferroviaria Prato Centrale prendi il bus urbano di AT, linea 1+ in direzione Centro Pecci / Repubblica
+                                            (fermata Centro Pecci).
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Gli autobus AT dispongono di pedana ribassabile per l'accesso con carrozzina e di segnale acustico per le fermate.
+                                            Si consiglia di verificare orari e servizi tramite il sito di AT.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                     <div class="row bg-bianco p-4 mt-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Auto o Bus privato</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Da Autostrada A1 (Milano-Roma):  all'altezza dell'uscita per Firenze, lasciare la A1 e immettersi sull'autostrada A11 
-                                (Firenze-Mare) direzione Pisa; uscire al casello Prato Est.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Da Autostrada A11 (Firenze-Mare): uscita Prato Est, seguire le indicazioni per il Centro d'Arte Contemporanea lungo la 
-                                tangenziale Leonardo Da Vinci, direzione Pistoia.
-                            </p>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Bus Extraurbano R1</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <p>
+                                            Dalla stazione ferroviaria Firenze Santa Maria Novella prendi la Tramvia T2 da Alamanni-Stazione in direzione Peretola
+                                            Aeroporto fino al capolinea. Da qui prendere il pullmann extraurbano linea R1 di Autolinee Toscane diretto a PRATO,
+                                            fino alla fermata Questura. Tutti i tram in servizio a Firenze e tutte le pensiline sono accessibili ai passeggeri
+                                            con difficoltà motorie o visive.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Si consiglia di verificare orari e servizi tramite il sito di AT.
+                                            Per le linee extraurbane è disponibile un servizio di fermate bus accessibili e autobus attrezzati per il trasporto di
+                                            persone con disabilità, su prenotazione. Si consiglia di prenotare tramite i canali di AT.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                     <div class="row bg-bianco p-4 mt-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Parcheggio</p>
-                            <br>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Auto o Bus privato</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <p>
+                                            Da Autostrada A1 (Milano-Roma):  all'altezza dell'uscita per Firenze, lasciare la A1 e immettersi sull'autostrada A11
+                                            (Firenze-Mare) direzione Pisa; uscire al casello Prato Est.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Da Autostrada A11 (Firenze-Mare): uscita Prato Est, seguire le indicazioni per il Centro d'Arte Contemporanea lungo la
+                                            tangenziale Leonardo Da Vinci, direzione Pistoia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
-                        <div class="col-6">
-                            <p>
-                                Nei pressi del Centro Pecci si trovano numerosi posti auto gratuiti non custoditi. I parcheggi per auto con contrassegno 
-                                più comodi si trovano vicino al museo, dal lato Art Hotel Museo: da qui è possibile seguire la passerella curva attorno 
-                                al museo fino all'ingresso del museo.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Gli autobus privati possono fare sosta di fronte al museo, su Viale della Repubblica, nel posto dedicato.
-                            </p>
+                    </div>
+                    <div class="row bg-bianco p-4 mt-4">
+                        <div class="col-12">
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Parcheggio</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <p>
+                                            Nei pressi del Centro Pecci si trovano numerosi posti auto gratuiti non custoditi. I parcheggi per auto con contrassegno
+                                            più comodi si trovano vicino al museo, dal lato Art Hotel Museo: da qui è possibile seguire la passerella curva attorno
+                                            al museo fino all'ingresso del museo.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            Gli autobus privati possono fare sosta di fronte al museo, su Viale della Repubblica, nel posto dedicato.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -598,7 +628,7 @@
     </div>
     <div class="container-fluid margine-header mb-3 px-4">
         <div class="row" id="ACCESSIBILITÀ">
-            <div class="col-lg-3 px-0 px-lg-2">
+            <div class="col-lg-3 px-2 px-lg-4">
                 <div class="px-0 box-sticky flex-wrap">
                     <p class="sottotitolo col-12 mb-4 mb-lg-0">ACCESSIBILITÀ</p>
                     <br>
@@ -606,27 +636,31 @@
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-2 px-0">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row bg-bianco p-4">
                         <div class="col-12">
-                            <p class="sottotitolo">Servizi</p>
-                            <br>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                L'accesso è gratuito per ogni persona con disabilità e per chi accompagna.
-                                La biglietteria è accessibile tramite una porta girevole, una porta ad apertura automatica con sensore di presenza 
-                                segnalata da percorsi tattili a terra e un'apertura su richiesta.
-                                In ogni piano della struttura sono presenti servizi igienici attrezzati, con pulsante di apertura e chiusura automatico.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                È possibile usufruire del prestito gratuito di sedie a rotelle, disponibili in Biglietteria.
-                                Le sedie a rotelle motorizzate sono permesse.
-                                Sono disponibili sedute lungo il percorso espositivo ed è possibile prendere in prestito sgabelli pieghevoli, 
-                                al primo piano.
-                            </p>
+                            <details class="collapsible-section">
+                                <summary class="sottotitolo">Servizi</summary>
+                                <div class="collapsible-content">
+                                    <br>
+                                    <div class="col-6">
+                                        <p>
+                                            L'accesso è gratuito per ogni persona con disabilità e per chi accompagna.
+                                            La biglietteria è accessibile tramite una porta girevole, una porta ad apertura automatica con sensore di presenza
+                                            segnalata da percorsi tattili a terra e un'apertura su richiesta.
+                                            In ogni piano della struttura sono presenti servizi igienici attrezzati, con pulsante di apertura e chiusura automatico.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>
+                                            È possibile usufruire del prestito gratuito di sedie a rotelle, disponibili in Biglietteria.
+                                            Le sedie a rotelle motorizzate sono permesse.
+                                            Sono disponibili sedute lungo il percorso espositivo ed è possibile prendere in prestito sgabelli pieghevoli,
+                                            al primo piano.
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -635,15 +669,15 @@
     </div>
     <div class="container-fluid margine-header mb-3 px-4">
         <div class="row" id="MAPPA">
-            <div class="col-lg-3 px-0 px-lg-2">
-                <div class="px-0 box-sticky">
+            <div class="col-lg-3 px-2 px-lg-4">
+                <div class="px-0 box-sticky flex-wrap">
                     <p class="sottotitolo col-12 mb-4 mb-lg-0">MAPPA</p>
                     <br>
-                    <p class="color-grigio-scuro">Orientati negli spazi del Centro Pecci, scoprendo la disposizione degli ambienti</p>
+                    <p class="color-grigio-scuro col-12 mb-4 mb-lg-0 d-none d-lg-block">Orientati negli spazi del Centro Pecci, scoprendo la disposizione degli ambienti</p>
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-2 px-0">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row bg-bianco p-4 position">
                         <div class=" open-in-full">
                             <img src="img/img_generale/open-in-full.svg" alt="Apri mappa a schermo intero">

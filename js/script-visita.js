@@ -1,5 +1,21 @@
-// Funzione per gestire la visibilità delle ancore in base al dispositivo
+// Collapsible sections
+document.addEventListener('DOMContentLoaded', function() {
+    const collapsibleSections = document.querySelectorAll('.collapsible-section');
 
+    function updateCollapsibleSections() {
+        const isLarge = window.innerWidth >= 992;
+        collapsibleSections.forEach(section => {
+            if (isLarge) {
+                section.setAttribute('open', '');
+            } else {
+                section.removeAttribute('open');
+            }
+        });
+    }
+
+    updateCollapsibleSections();
+    window.addEventListener('resize', updateCollapsibleSections);
+});
 
 // Lightbox per la mappa
 document.addEventListener('DOMContentLoaded', function() {
