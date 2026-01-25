@@ -2,13 +2,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const collapsibleSections = document.querySelectorAll('.collapsible-section');
 
+    collapsibleSections.forEach(section => {
+        const header = section.querySelector('.collapsible-header');
+        header.addEventListener('click', function() {
+            section.classList.toggle('open');
+        });
+    });
+
     function updateCollapsibleSections() {
         const isLarge = window.innerWidth >= 992;
         collapsibleSections.forEach(section => {
             if (isLarge) {
-                section.setAttribute('open', '');
+                section.classList.add('open');
             } else {
-                section.removeAttribute('open');
+                section.classList.remove('open');
             }
         });
     }

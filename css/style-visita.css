@@ -154,34 +154,54 @@ html {
 }
 
 /* Collapsible sections */
-.collapsible-section summary {
+.collapsible-header {
     cursor: pointer;
-    list-style: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.collapsible-section summary::-webkit-details-marker {
-    display: none;
-}
-
-.collapsible-section summary::after {
+.collapsible-header::after {
     content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
     float: right;
-    font-size: 1.2em;
     margin-left: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
+    transform: rotate(-90deg);
 }
 
-.collapsible-section[open] summary::after {
-    content: "";
+.collapsible-section.open .collapsible-header::after {
     transform: rotate(90deg);
 }
 
 .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding-top 0.3s ease;
+    padding-top: 0;
+}
+
+.collapsible-section.open .collapsible-content {
+    max-height: 2000px; /* Large enough to accommodate content */
     padding-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .collapsible-header::after {
+        display: none;
+    }
+    .collapsible-section .collapsible-content {
+        max-height: none !important;
+        padding-top: 1rem !important;
+    }
+    .collapsible-header {
+        cursor: default;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -189,12 +209,18 @@ html {
         top: 64px;
     }
 }
-
 @media (max-width: 992px){
-    /* .bg-bianco{
-        margin-top: 0 !important;
-    } */
-
+    .row.p-4.bg-bianco{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    .collapsible-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     .box-sticky {
         position: static;
         top: auto;
@@ -202,3 +228,9 @@ html {
         /* flex-direction: column; */
     }
 }
+        @media (max-width: 768px) {
+            .row.p-4.bg-bianco{
+                padding-top: 0.75rem !important;
+                padding-bottom: 0.75rem !important;
+            }
+        }
