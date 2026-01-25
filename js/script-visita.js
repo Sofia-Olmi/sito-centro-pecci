@@ -1,23 +1,9 @@
 // Funzione per gestire la visibilità delle ancore in base al dispositivo
-function toggleAnchorsVisibility() {
-    const navListContainer = document.querySelector('.nav-list-container');
-    if (navListContainer) {
-        // Nasconde le ancore in mobile (schermi < 1200px), le mantiene visibili in desktop
-        if (window.innerWidth < 1200) {
-            navListContainer.style.display = 'none';
-        } else {
-            navListContainer.style.display = 'block';
-        }
-    }
-}
+
 
 // Lightbox per la mappa
 document.addEventListener('DOMContentLoaded', function() {
-    // Gestisce la visibilità iniziale delle ancore
-    toggleAnchorsVisibility();
-
-    // Gestisce la visibilità delle ancore al resize della finestra
-    window.addEventListener('resize', toggleAnchorsVisibility);
+   
     const mappaImg = document.getElementById('mappaImg');
     const openInFullIcon = document.querySelector('.open-in-full');
     const lightbox1 = document.getElementById('lightbox1');
