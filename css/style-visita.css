@@ -19,10 +19,13 @@ html {
     position: sticky;
     top: 180px;
 }
-
-.puntato {
+ul.puntato {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 25px;
+}
+
+li.titoletto{
+    padding-left: 0;
 }
 
 .nav-list{
