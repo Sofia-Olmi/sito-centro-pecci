@@ -190,7 +190,7 @@ swiper-slide img {
     
     /* Spazio tra immagine e prima frase in mobile */
     .bg-grigio img {
-        margin-bottom: 1rem !important;
+        margin-bottom: 2rem !important;
     }
     
     /* Riduce padding del contenitore testo */
