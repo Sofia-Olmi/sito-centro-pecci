@@ -71,12 +71,14 @@ swiper-container {
 
 /* Nascondi swiper su mobile */
 @media (max-width: 767px) {
-    swiper-container,
+    swiper-container
     .swiper-button-prev-custom,
     .swiper-button-next-custom,
     .col-md-6.position-relative {
         display: none !important;
     }
+    
+
 }
 
 swiper-slide {
