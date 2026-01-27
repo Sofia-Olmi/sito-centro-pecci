@@ -188,15 +188,33 @@ swiper-slide img {
         margin-bottom: 1rem !important;
     }
     
-    /* Spazio sotto ogni immagine solo in mobile quando sono in colonna */
-    .bg-grigio .row.g-0 .col-12 img {
-        margin-bottom: 0;
+    /* Spazio tra immagine e prima frase in mobile */
+    .bg-grigio img {
+        margin-bottom: 1rem !important;
     }
     
-    /* Ripristina margine quando il testo è sotto l'immagine (order-2) */
-    .bg-grigio .row.g-0 .order-2 + .order-1 img,
-    .bg-grigio .row.g-0 .order-1 img {
-        margin-bottom: 1rem;
+    /* Riduce padding del contenitore testo */
+    .bg-grigio .d-flex {
+        padding-top: 0 !important;
+    }
+    
+    /* Riduce spazi tra le frasi di testo */
+    .bg-grigio .sottotitolo {
+        margin-bottom: 0.3rem !important;
+        margin-top: 0 !important;
+    }
+    
+    .bg-grigio br {
+        display: none;
+    }
+    
+    .bg-grigio .titolo {
+        margin-top: 0.3rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+    
+    .bg-grigio .underline {
+        margin-top: 0.5rem !important;
     }
     
     .riga1-mostre {

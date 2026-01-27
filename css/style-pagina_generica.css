@@ -110,4 +110,8 @@
     .mt-md-3, .mt-md-4, .mt-md-5 {
         margin-top: 0 !important;
     }
+
+    footer .row:first-child {
+        padding-top: 1rem;
+    }
 }
