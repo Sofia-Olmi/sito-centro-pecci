@@ -111,5 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (para) {
             para.style.display = 'none';
         }
+
+        // Nasconde le linee "data" negli swiper-slide su mobile
+        const dateElements = document.querySelectorAll('.swiper2 .slide-info p.color-grigio-scuro');
+        dateElements.forEach(p => p.style.display = 'none');
     }
 });
