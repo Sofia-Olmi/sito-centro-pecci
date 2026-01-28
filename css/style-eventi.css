@@ -99,14 +99,14 @@
     }
     
     /* Riduce dimensione titolo e aggiunge padding in mobile */
-    .riga1-eventi .titolo {
+    /* .riga1-eventi .titolo {
         font-size: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-    }
+    } */
     
     /* Riduce proporzionalmente i testi delle row 2-6 */
-    .bg-grigio .titolo {
+    /* .bg-grigio .titolo {
         font-size: 1.8rem;
         line-height: 1.1;
     }
@@ -117,7 +117,7 @@
     
     .bg-grigio .underline {
         font-size: 0.9rem;
-    }
+    } */
 }
 
 @media (max-width: 768px){
