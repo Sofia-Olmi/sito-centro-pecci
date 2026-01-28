@@ -25,9 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const header = section.querySelector('.collapsible-header');
         const content = section.querySelector('.collapsible-content');
 
-        if (target === header) {
+        const isMobile = window.innerWidth < 992;
+
+        if (target.closest('.collapsible-header') === header) {
             // Toggle this section
-            if (window.innerWidth < 992) {
+            if (isMobile) {
                 if (section.classList.contains('open')) {
                     section.classList.remove('open');
                 } else {
@@ -35,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     section.classList.add('open');
                 }
             }
-        } else if (target === content || content.contains(target)) {
+        } else if (target.closest('.collapsible-content') === content) {
             // Close this section when tapping content
-            if (window.innerWidth < 992) {
+            if (isMobile) {
                 section.classList.remove('open');
             }
         }
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const header = section.querySelector('.collapsible-header');
         const content = section.querySelector('.collapsible-content');
 
-        // Touch events for swipe detection
+        // Touch events for mobile swipe detection
         section.addEventListener('touchstart', function(e) {
             if (window.innerWidth >= 992) return;
             touchStartX = e.touches[0].clientX;
@@ -67,14 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // If it's a swipe, do nothing (don't close)
         });
 
-        // Click events for desktop and as fallback
+        // Click events for desktop
         header.addEventListener('click', function(e) {
-            if (window.innerWidth >= 992) return;
-            handleSectionInteraction(section, e.target);
-        });
-
-        content.addEventListener('click', function(e) {
-            if (window.innerWidth >= 992) return;
+            if (window.innerWidth < 992) return;
             handleSectionInteraction(section, e.target);
         });
     });
