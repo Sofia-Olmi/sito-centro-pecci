@@ -28,34 +28,6 @@
     background-color: transparent;
 }
 
-
-
-/* Colore testo bottone in base alla sezione attiva */
-.voci-header:has(.nav-1.d-flex) .bottone-prenota-header a {
-    color: #ef7a61;
-}
-.voci-header:has(.nav-2.d-flex) .bottone-prenota-header a {
-    color: #FFD34D;
-}
-.voci-header:has(.nav-3.d-flex) .bottone-prenota-header a {
-    color: #a580b8;
-}
-.voci-header:has(.nav-4.d-flex) .bottone-prenota-header a {
-    color: #33af7b;
-}
-.voci-header:has(.nav-5.d-flex) .bottone-prenota-header a {
-    color: #ff8ec8;
-}
-
-/* hover - testo bianco, sfondo sempre nero */
-.bottone-prenota-header:hover {
-    background-color: #000000;
-}
-.bottone-prenota-header:hover a {
-    color: #ffffff !important;
-    background-color: transparent !important;
-}
-
 .underline {
     text-decoration: underline;
 }

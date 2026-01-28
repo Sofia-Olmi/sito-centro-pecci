@@ -96,11 +96,6 @@
         margin-bottom: 1rem !important;
     }
     
-    /* Spazio tra immagine e prima frase in mobile */
-    .bg-grigio img {
-        margin-bottom: 1rem !important;
-    }
-    
     /* Riduce padding del contenitore testo */
     .bg-grigio .d-flex {
         padding-top: 0 !important;
@@ -150,5 +145,12 @@
     
     .bg-grigio .underline {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+/* Spazio tra immagine e prima frase in mobile */
+    .bg-grigio img {
+        margin-bottom: 1rem !important;
     }
 }

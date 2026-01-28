@@ -1,11 +1,78 @@
 // Collapsible sections
 document.addEventListener('DOMContentLoaded', function() {
     const collapsibleSections = document.querySelectorAll('.collapsible-section');
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+    const swipeThreshold = 10; // pixels
+    const tapTimeThreshold = 300; // ms
+
+    function isTap(touchEndX, touchEndY, touchEndTime) {
+        const distance = Math.sqrt(Math.pow(touchEndX - touchStartX, 2) + Math.pow(touchEndY - touchStartY, 2));
+        const timeDiff = touchEndTime - touchStartTime;
+        return distance < swipeThreshold && timeDiff < tapTimeThreshold;
+    }
+
+    function closeAllSections(except = null) {
+        collapsibleSections.forEach(sec => {
+            if (sec !== except && window.innerWidth < 992) {
+                sec.classList.remove('open');
+            }
+        });
+    }
+
+    function handleSectionInteraction(section, target) {
+        const header = section.querySelector('.collapsible-header');
+        const content = section.querySelector('.collapsible-content');
+
+        const isMobile = window.innerWidth < 992;
+
+        if (target.closest('.collapsible-header') === header) {
+            // Toggle this section
+            if (isMobile) {
+                if (section.classList.contains('open')) {
+                    section.classList.remove('open');
+                } else {
+                    closeAllSections(section);
+                    section.classList.add('open');
+                }
+            }
+        } else if (target.closest('.collapsible-content') === content) {
+            // Close this section when tapping content
+            if (isMobile) {
+                section.classList.remove('open');
+            }
+        }
+    }
 
     collapsibleSections.forEach(section => {
         const header = section.querySelector('.collapsible-header');
-        header.addEventListener('click', function() {
-            section.classList.toggle('open');
+        const content = section.querySelector('.collapsible-content');
+
+        // Touch events for mobile swipe detection
+        section.addEventListener('touchstart', function(e) {
+            if (window.innerWidth >= 992) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchStartTime = Date.now();
+        }, { passive: true });
+
+        section.addEventListener('touchend', function(e) {
+            if (window.innerWidth >= 992) return;
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            const touchEndTime = Date.now();
+
+            if (isTap(touchEndX, touchEndY, touchEndTime)) {
+                handleSectionInteraction(section, e.target);
+            }
+            // If it's a swipe, do nothing (don't close)
+        });
+
+        // Click events for desktop
+        header.addEventListener('click', function(e) {
+            if (window.innerWidth < 992) return;
+            handleSectionInteraction(section, e.target);
         });
     });
 
