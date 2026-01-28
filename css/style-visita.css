@@ -8,8 +8,6 @@ html {
 }
 
 .riga1visita {
-    display: flex;
-    align-items: center;
     min-height: 400px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -231,9 +229,19 @@ li.titoletto{
         /* flex-direction: column; */
     }
 }
-        @media (max-width: 768px) {
-            .row.p-4.bg-bianco{
-                padding-top: 0.75rem !important;
-                padding-bottom: 0.75rem !important;
-            }
-        }
+@media (max-width: 768px) {
+    .row.p-4.bg-bianco{
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+      .icona-visita {
+    height: 69px;
+    width: auto;
+  }
+
+  .riga1visita {
+    height: 114px;
+    min-height: auto;
+    padding: 0;
+  }
+}
