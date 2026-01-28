@@ -234,14 +234,17 @@ li.titoletto{
         padding-top: 0.75rem !important;
         padding-bottom: 0.75rem !important;
     }
-      .icona-visita {
-    height: 69px;
-    width: auto;
-  }
+}
 
-  .riga1visita {
-    height: 114px;
-    min-height: auto;
-    padding: 0;
-  }
+@media (max-width: 991px) {
+.icona-visita {
+        height: 69px;
+        width: auto;
+    }
+
+    .riga1visita {
+        height: 114px;
+        min-height: auto;
+        padding: 0;
+    }
 }

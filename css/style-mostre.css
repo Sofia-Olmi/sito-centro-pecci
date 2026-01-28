@@ -1,13 +1,16 @@
 .icona-mostre{
-    max-width: 100%;
-    width: 220px;
+    max-width: 322px;
     height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .header-mostre {
     min-height: 445px;
+}
+
+.riga1-mostre {
+    min-height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contenuto-header {
@@ -156,18 +159,6 @@ swiper-slide img {
         min-height: 114px;
     }
     
-    .icona-mostre {
-        height: 69px;
-        width: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    
-    /* Nasconde la descrizione in mobile */
-    .riga1-mostre .titoletto {
-        display: none !important;
-    }
-    
     .sezione-destra {
         flex: 0 0 50%;
     }
@@ -214,12 +205,6 @@ swiper-slide img {
         margin-top: 0.5rem !important;
     }
     
-    .riga1-mostre {
-        height: 114px;
-        min-height: auto;
-        padding: 0;
-    }
-    
     /* Riduce dimensione titolo e aggiunge padding in mobile */
     .riga1-mostre .titolo {
         font-size: 2rem;
@@ -246,5 +231,18 @@ swiper-slide img {
  /* Spazio tra immagine e prima frase in mobile */
     .bg-grigio img {
         margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .icona-mostre {
+        height: 69px;
+        width: auto;
+    }
+
+    .riga1-mostre {
+        height: 114px;
+        min-height: auto;
+        padding: 0;
     }
 }

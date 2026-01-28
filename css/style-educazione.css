@@ -157,7 +157,7 @@ h3{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .icona-educazione {
     height: 69px;
     width: auto;

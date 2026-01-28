@@ -6,6 +6,12 @@
     margin-bottom: 2rem;
 }
 
+.riga1-cinema {
+    min-height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .header-mostre {
     min-height: 445px;
 }
@@ -62,18 +68,6 @@
         min-height: 114px;
     }
     
-    .icona-cinema {
-        height: 69px;
-        width: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    
-    /* Nasconde la descrizione in mobile */
-    .riga1-cinema .titoletto {
-        display: none !important;
-    }
-    
     .sezione-destra {
         flex: 0 0 50%;
     }
@@ -120,12 +114,6 @@
         margin-top: 0.5rem !important;
     }
     
-    .riga1-cinema {
-        height: 114px;
-        min-height: auto;
-        padding: 0;
-    }
-    
     /* Riduce dimensione titolo e aggiunge padding in mobile */
     .riga1-cinema .titolo {
         font-size: 2rem;
@@ -152,5 +140,18 @@
 /* Spazio tra immagine e prima frase in mobile */
     .bg-grigio img {
         margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+.icona-cinema {
+        height: 69px;
+        width: auto;
+    }
+
+    .riga1-cinema {
+        height: 114px;
+        min-height: auto;
+        padding: 0;
     }
 }
