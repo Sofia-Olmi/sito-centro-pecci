@@ -56,12 +56,8 @@
 }
 
 /* STILE SWIPER EVENTI */
-.bg-grigio:has(swiper-container) {
-    margin-top: 4rem;
-    padding-bottom: 4rem;
-}
 
-.col-md-6.position-relative {
+.col-lg-6.position-relative {
     position: relative;
 }
 
@@ -70,18 +66,6 @@ swiper-container {
     height: 100%;
     padding: 0 50px;
     position: relative;
-}
-
-/* Nascondi swiper su mobile */
-@media (max-width: 767px) {
-    swiper-container
-    .swiper-button-prev-custom,
-    .swiper-button-next-custom,
-    .col-md-6.position-relative {
-        display: none !important;
-    }
-    
-
 }
 
 swiper-slide {
@@ -147,6 +131,21 @@ swiper-slide img {
 /* Freccia destra: appena dopo lo swiper */
 .swiper-button-next-custom {
     right: 0;
+}
+
+/* RESPONSIVE SWIPER EVENTI */
+@media (max-width: 768px) {
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev-custom svg,
+    .swiper-button-next-custom svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* NUOVI STILI PER MOBILE */
