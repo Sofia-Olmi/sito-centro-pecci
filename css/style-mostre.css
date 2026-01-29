@@ -163,6 +163,10 @@ swiper-slide img {
     .bg-grigio br {
         display: none;
     }
+
+    .color-grigio-scuro.d-none.d-lg-block br {
+        display: block;
+    }
     
     .bg-grigio .underline {
         margin-top: 0.5rem !important;
