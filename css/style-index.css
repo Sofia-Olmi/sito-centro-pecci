@@ -63,7 +63,6 @@ body {
 .video-overlay .titolo {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
-ù
 
 
 
@@ -71,6 +70,7 @@ body {
 /* -----------------------SWIPER MOSTRE ------------------------*/
 .swiper-container-wrapper {
     position: relative;
+    height: 450px;
 }
 
 .swiper {
@@ -118,7 +118,6 @@ body {
     background: #000000;
 }
 
-
 /* FRECCE */
 .swiper-button-next,
 .swiper-button-prev {
@@ -140,8 +139,9 @@ body {
 @media (max-width: 768px) {
     .swiper-button-next,
     .swiper-button-prev {
-        width: 10px;
-        height: 10px;
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -345,6 +345,10 @@ swiper-slide img {
         width: 100%;
     }
 
+    .swiper-container-wrapper {
+        height: auto;
+    }
+
     .swiper {
         height: auto;
     }
@@ -352,7 +356,7 @@ swiper-slide img {
     .slide-content img {
         height: auto;
     }
-/* 
+/*
     .slide-info h3 {
         font-size: 1rem;
     }
@@ -369,8 +373,14 @@ swiper-slide img {
     .swiper-button-prev {
         width: 30px;
         height: 30px;
-        right: -40px;
-        left: -40px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
     }
 
     .swiper-button-next:after,
@@ -392,6 +402,10 @@ swiper-slide img {
 @media (max-width: 480px) {
     .video-container {
         height: 100vh;
+    }
+
+    .swiper-container-wrapper {
+        height: auto;
     }
 
     .swiper {
