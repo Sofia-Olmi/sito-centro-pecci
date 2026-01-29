@@ -241,7 +241,7 @@ swiper-container {
 
 swiper-slide {
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
     display: flex;
     justify-content: center;
     align-items: stretch;
