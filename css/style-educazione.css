@@ -92,8 +92,8 @@
 }
 
 .filtr-item {
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 auto !important;
+    width: 100% !important;
 }
 
 .box-ricerca select {
@@ -157,8 +157,8 @@
 
 @media (min-width: 768px)  {
     .filtr-item {
-    flex: 0 0 auto;
-    width: 50%;
+    flex: 0 0 auto !important;
+    width: 50% !important;
   }
 }
 
@@ -194,7 +194,7 @@
 
 @media (min-width: 1200px) {
     .filtr-item {
-    flex: 0 0 auto;
-    width: 33.32%;
+    flex: 0 0 auto !important;
+    width: 33.32% !important;
   }
 }
