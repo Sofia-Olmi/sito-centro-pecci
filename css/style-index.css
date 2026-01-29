@@ -1,4 +1,4 @@
-/* RESET BASE */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-/* VIDEO SECTION - A TUTTA LARGHEZZA */
+/* ----------------------VIDEO------------------------------- */
 .video-section {
     width: 100vw;
     margin: 0;
@@ -63,8 +63,12 @@ body {
 .video-overlay .titolo {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+ù
 
-/* SWIPER SLIDER */
+
+
+
+/* -----------------------SWIPER MOSTRE ------------------------*/
 .swiper-container-wrapper {
     position: relative;
 }
@@ -95,7 +99,7 @@ body {
     object-fit: cover;
 }
 
-/* PAGINATION */
+
 .swiper-pagination {
     position: absolute;
     bottom: -50px;
@@ -114,7 +118,8 @@ body {
     background: #000000;
 }
 
-/* NAVIGATION ARROWS */
+
+/* FRECCE */
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -160,7 +165,7 @@ body {
     /* background: rgba(255, 255, 255, 1); */
 }
 
-/* SLIDER TESTO */
+
 /* SLIDER TESTO */
 .vertical-slider-container {
     width: 100%;
@@ -204,13 +209,14 @@ body {
 }
 
 .vertical-slide {
-    height: 450px; /* Cambiato da 400px a 450px per desktop */
+    height: 450px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px 20px; /* Aggiungi padding orizzontale */
+    padding: 40px 20px; /*padding orizzontale */
 }
+
 
 /* RESPONSIVE - MOBILE */
 @media (max-width: 768px) {
@@ -226,7 +232,9 @@ body {
 }
 
 
-/* STILE SWIPER EVENTI */
+
+
+/*-----------------SWIPER EVENTI---------------------------*/
 
 .col-lg-6.position-relative {
     position: relative;
@@ -277,7 +285,7 @@ swiper-slide img {
     margin-top: auto;
 }
 
-/* Frecce personalizzate */
+/* FRECCE */
 .swiper-button-prev-custom,
 .swiper-button-next-custom {
     position: absolute;
@@ -305,7 +313,8 @@ swiper-slide img {
 }
 
 
-/* STILE ICONE RISTO-APE */
+
+/* -------------------BOX INFORMATIVO RISTO-APE--------------------------- */
 .bg-verde .col-2 img {
     width: auto;
     height: auto;
@@ -326,6 +335,8 @@ swiper-slide img {
         margin-top: 1rem !important;
     }
 }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -366,12 +377,6 @@ swiper-slide img {
     .swiper-button-prev:after {
         font-size: 18px;
     }
-
-    /* Diminuisci spazio tra swiper 1 e slider verticale */
-    /* .row.mt-4.mb-5 {
-        margin-top: 0.5rem !important;
-        margin-bottom: 0.5rem !important;
-    } */
 
     .vertical-slider-container {
         height: 300px;
