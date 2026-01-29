@@ -840,21 +840,21 @@ details.open summary::after {
 }
 
 /* ----------------------STILI TESTO TABLET---------------------- */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1245px) {
     body{
         font-size: 18px;
     }
     .titolo {
-        font-size: 26px;
-        line-height: 26px;
+        font-size: 40px;
+        line-height: 40px;
     }
     .sottotitolo {
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 25px;
+        line-height: 25px;
     }
     .titoletto {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 22px;
+        line-height: 22px;
     }
     .voci {
         font-size: 14px;
