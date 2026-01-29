@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educazione | Centro Pecci</title>
+    <title>Myo Restaurant | Centro Pecci</title> 
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style-generale.css">
-    <link rel="stylesheet" href="css/style-educazione.css"> <!-- DA MODIFICARE -->
+    <link rel="stylesheet" href="css/style-pagina_generica.css"> 
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,10 @@
     
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/img_generale/favicon.png">
+
 </head>
 
 <body>
-
 
 <!-- HEADER -->
 <header class="containter-fluid header bg-bianco">
@@ -294,327 +294,60 @@
     </div>
 </div>
 
-    <!-- BANDA -->
-<div class="container-fluid bg-viola riga1-educazione margine-header px-4">
-        <div class="row h-100 align-items-center">
-            <div class="col-6 h-100 d-flex align-items-center d-lg-block">
-                <p class="titolo">Educazione</p>
-                <br>
-                <p class="titoletto d-none d-lg-block">
-                    Il Centro Pecci offre laboratori e attività educative che coinvolgono attivamente persone 
-                    di ogni età nella scoperta dei linguaggi dell'arte contemporanea.
-                </p>
-            </div>
-            <div class="col-6 col-md-3 offset-md-2 text-center">
-                <img src="img/img_educazione/laboratori-07.svg" class="img-fluid icona-educazione" alt="icona educazione">
+<!-- CONTENUTO DELLA PAGINA -->
+<div class="container-fluid margine-header px-4">
+    <div class="row">
+        <!-- IMMAGINE - prima su mobile, nascosta su desktop -->
+        <div class="col-12 d-md-none order-1 px-0">
+            <img src="img/img_pagine-generiche/myo-restaurant.webp" alt="spazi del Myo Restaurant" class="img-fluid w-100">
+        </div>
+
+        <!-- TESTO INTRODUTTIVO - secondo su mobile, ha position sticky su desktop -->
+        <div class="col-12 col-md-4 order-2 order-md-1">
+            <div class="box-sticky mb-md-5">
+                <div class="mobile-content-padding">
+                    <p class="titolo mt-3">Bookshop</p>
+                    <br>
+                    <p class="color-grigio-scuro">Il bookshop offre una selezione di libri, edizioni d'arte e articoli di design per esplorare la programmazione del Centro Pecci, dalle mostre agli eventi dedicati a letteratura, cinema e performance.</p>
+                </div>
             </div>
         </div>
-</div>
-<div class="bg-viola container-fluid nav-list-container px-4">
-        <div class="row align-items-center">
-            <div class="col-12 align-items-center titoletto d-none d-pers-block">
-                <ul class="nav-list">
-                    <li class="nav-items">
-                        <a data-filter="all" class="nav-link">Tutti</a>
-                    </li>
-                    <li class="nav-items">
-                        <a data-filter="1" class="nav-link">Scuole</a>
-                    </li>
-                    <li class="nav-items">
-                        <a data-filter="2" class="nav-link">Università e Accademie</a>
-                    </li>
-                    <li class="nav-items">
-                        <a data-filter="3" class="nav-link">Famiglie</a>
-                    </li>
-                    <li class="nav-items">
-                        <a data-filter="4" class="nav-link">Giovani e adulti</a>
-                    </li>
-                    <li class="nav-items">
-                        <a data-filter="5" class="nav-link">Arte e benessere</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box-ricerca py-3 d-block d-pers-none titoletto">
-                <form>
-                    <select id="auto" name="auto">
-                        <option data-filter="all">Tutti</option>
-                        <option data-filter="1">Scuole</option>
-                        <option data-filter="2">Università e Accademie</option>
-                        <option data-filter="3">Famiglie</option>
-                        <option data-filter="4">Giovani e adulti</option>
-                        <option data-filter="5">Arte e benessere</option>
-                    </select>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </form>
+        <!-- IMMAGINE E CONTENUTO - terzo su mobile, visibile su desktop -->
+        <div class="col-12 col-md-8 offset-md-0 order-3 order-md-2">
+            <div class="container-fluid px-0">
+                <!-- Immagine solo desktop -->
+                <div class="row d-none d-md-flex">
+                    <div class="col-12">
+                        <img src="img/img_pagine-generiche/myo-restaurant.webp" alt="spazi del Myo Restaurant" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row mt-4 mobile-content-padding">
+                    <div class="col-12 col-md-4 order-2 order-md-1 mt-5 mt-md-0">
+                        <p class="sottotitolo">Lunedì e Martedì:</p>
+                        <p class="sottotitolo color-verde mt-2">10:00–15:30</p>
+                        <p class="sottotitolo mt-1">Da mercoledì a domenica:</p>
+                        <p class="sottotitolo color-verde mt-2">10:00–21:30</p>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-2 mt-4 mt-md-0 order-1 order-md-2 mb-4">
+                        <p class="sottotitolo">Info generali</p>
+                        <p class="color-grigio-scuro mt-2">Per maggiori informazioni e per prenotazioni contattare il numero:</p>
+                        <a class="underline color-grigio-scuro hover-verde" href="tel:+390574531829">+39 0574 531829</a>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-5 mobile-content-padding">
+                    <div class="col-12 col-md-10">
+                        <p class="sottotitolo">Dal Catalogo al Souvenir</p>
+                        <p class="color-grigio-scuro mt-2">Qui si possono trovare le edizioni d’artista e i cataloghi realizzati dal Centro Pecci, insieme a una selezione curata di volumi, saggi e monografie per approfondire gli artisti in mostra e le attività in programma.<br>Il bookshop presenta una sezione dedicata all’infanzia, con libri d’artista e articoli scelti, e una selezione di oggetti firmati da importanti designer, per continuare a vivere l’arte anche fuori dal Centro Pecci.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-<!-- SEZIONE LABORATORI  -->
- <div class="mx-4">
- <div class="filtr-container my-5">
-        <div class="mb-4 filtr-item" data-category="5, 4" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/art_lab.webp" class="img-fluid" alt="mostra passata 1">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">CENTRO PECCI ART LAB</p>
-                        <br>
-                        <p class="testo">
-                            Laboratori gratuiti di attività espressive per adolescenti e giovani adulti
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="5" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/laboratori_attività_espressive.webp" class="img-fluid" alt="attività 1">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">LABORATORI ATTIVITÀ ESPRESSIVE</p>
-                        <br>
-                        <p class="testo">
-                            Laboratori dedicati a persone seguite dal servizio di salute mentale
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="5" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/in_corso_d_opera.webp" class="img-fluid" alt="attività 2">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">IN CORSO D'OPERA</p>
-                        <br>
-                        <p class="testo">
-                            Attività accessibili alle persone con demenza e chi se ne prende cura
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="5" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/dance_well_lab_espressivi.webp" class="img-fluid" alt="attività 3">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">DANCE WELL E LABORATORI ESPRESSIVI</p>
-                        <br>
-                        <p class="testo">
-                            Attività accessibili alle persone con il Parkinson, le loro famiglie e caregivers
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="4, 2" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/pecci_school.webp" class="img-fluid" alt="attività 4">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">PECCI SCHOOL</p>
-                        <br>
-                        <p class="testo">
-                           Programma di lezioni e workshop per approfondire le diverse discipline artistiche
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="4" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/unicoop_under30.webp" class="img-fluid" alt="attività 5">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">ATTIVITÀ UNICOOP UNDER 30</p>
-                        <br>
-                        <p class="testo">
-                            Proposta di eventi per i più giovani collegati alle mostre in corso e alle attività del Centro Pecci
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="3" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/primi_mille_giorni_darte.webp" class="img-fluid" alt="attività 6">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">PRIMI MILLE GIORNI D'ARTE AL CENTRO PECCI</p>
-                        <br>
-                        <p class="testo">
-                            Laboratori per donne in gravidanza e famiglie con bambine e bambini nella fascia 0–3 anni
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="3" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/centro_pecci_family.webp" class="img-fluid" alt="attività 7">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">CENTRO PECCI FAMILY</p>
-                        <br>
-                        <p class="testo">
-                            Laboratori dedicati alle famiglie con bambini nella fascia 3–6 anni e 7–11 anni
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="3, 1" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/campus.webp" class="img-fluid" alt="attività" class="img-fluid" alt="attività 8">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">CAMPUS</p>
-                        <br>
-                        <p class="testo">
-                            Attività dedicate a bambine e bambini nella fascia 6–11 anni e a ragazze e ragazzi nella fascia 12–18 anni
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="2" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/lingua_cultura_italiana.webp" class="img-fluid" alt="mostra passata 1">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">LINGUA E CULTURA ITALIANA</p>
-                        <br>
-                        <p class="testo">
-                            Laboratori per donne in gravidanza e famiglie con bambine e bambini nella fascia 0–3 anni
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="2" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/arte_architettura_design.webp" class="img-fluid" alt="attività 9">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">ARTE, ARCHITETTURA E DESIGN</p>
-                        <br>
-                        <p class="testo">
-                            Visite guidate in italiano, inglese e cinese dedicate a tematiche specifiche per Università e Accademie
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="2" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/incontri_professionisti.webp" class="img-fluid" alt="attività 10">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">VISITE E INCONTRI CON I PROFESSIONISTI</p>
-                        <br>
-                        <p class="testo">
-                            Visite guidate per Università e Accademie
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="1, 4" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/progetti_speciali.webp" class="img-fluid" alt="attività 11">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">PROGETTI SPECIALI</p>
-                        <br>
-                        <p class="testo">
-                            Attività dedicate alle scuole e ai giovani contro la dispersione scolastica e per l'inserimento lavorativo
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="1" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/secondaria_secondo_grado.webp" class="img-fluid" alt="attività 12">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">SECONDARIA DI SECONDO GRADO</p>
-                        <br>
-                        <p class="testo">
-                            Visite e laboratori per le classi delle scuola secondaria di secondo grado
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="3, 1" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/secondaria_primo_grado.webp" class="img-fluid" alt="attività 13">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">SECONDARIA DI PRIMO GRADO</p>
-                        <br>
-                        <p class="testo">
-                            Visite guidate e laboratori dedicati alle classi della scuola secondaria di I grado
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="1, 3" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/primaria.webp" class="img-fluid" alt="attività 14">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">PRIMARIA</p>
-                        <br>
-                        <p class="testo">
-                            Visite animate e laboratori al museo per le classi della scuola primaria
-                        </p>
-                        <br><a href="#" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-4 filtr-item" data-category="1, 3" data-sort="value">
-                <div class="card-mostra">
-                    <div class="img-mostra">
-                        <img src="img/img_educazione/nido_infanzia.webp" class="img-fluid" alt="attività 15">
-                    </div>
-                    <div class="info-mostra">
-                        <p class="sottotitolo">NIDO E INFANZIA</p>
-                        <br>
-                        <p class="testo">
-                            Visite animati e laboratori per i più piccoli
-                        </p>
-                        <br><a href="educazione_nome-laboratorio.html" class="underline hover-viola">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
- </div>
- </div>
+</div>
 
  <!---------------------- FOOTER --------------------->
-<footer class="container-fluid bg-azzurro px-4">
+<footer class="container-fluid bg-azzurro">
  <div class="row col-md-12">
     <div class="col-md-6 mt-md-3 mt-3">
         <label for="email" class="titolo">NEWSLETTER</label>
@@ -680,8 +413,10 @@
 
 </footer>
 
-<script src="js/script-generale.js"></script>
-<script src="js/filterizr/vanilla.filterizr.min.js"></script>
-<script src="js/script-educazione.js"></script>
+
+<script src="js/script-generale.js">
+
+</script>
+
 </body>
 </html>
