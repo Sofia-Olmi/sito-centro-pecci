@@ -341,14 +341,14 @@ swiper-slide img {
     .slide-content img {
         height: auto;
     }
-
+/* 
     .slide-info h3 {
         font-size: 1rem;
     }
 
     .slide-info p {
         font-size: 0.8rem;
-    }
+    } */
 
     .swiper-pagination {
         bottom: -40px;
