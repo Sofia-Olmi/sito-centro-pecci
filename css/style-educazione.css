@@ -145,6 +145,16 @@
     color: #333;
 }
 
+.filtr-item.filteredOut {
+    transition: all 0.5s ease !important;
+    z-index: 10 !important;
+}
+
+.filtr-item {
+    transition: all 0.5s ease !important;
+    z-index: 10 !important;
+}
+
 @media (min-width: 768px)  {
     .filtr-item {
     flex: 0 0 auto;
