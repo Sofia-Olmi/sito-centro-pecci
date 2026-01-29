@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funzione per aggiornare slides-per-view in base alla larghezza
     function updateSwiperSlides() {
         if (swiperElement) {
-            if (window.innerWidth < 1250) {
+            if (window.innerWidth < 576) {
+                swiperElement.setAttribute('slides-per-view', '1');
+            } else if (window.innerWidth < 1250) {
                 swiperElement.setAttribute('slides-per-view', '2');
             } else {
                 swiperElement.setAttribute('slides-per-view', '3');
