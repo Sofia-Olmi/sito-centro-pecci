@@ -11,7 +11,7 @@ body {
 
 /* HEADER */
 .header {
-    position: relative;
+    position: fixed;
     z-index: 100;
     width: 100%;
 }
@@ -21,6 +21,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    padding-top: 5vw;
     position: relative;
     left: 50%;
     right: 50%;
@@ -108,15 +109,15 @@ body {
     z-index: 10;
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     background: #000000;
     opacity: 1;
-}
+} */
 
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
     opacity: 1;
     background: #000000;
-}
+} */
 
 /* FRECCE */
 .swiper-button-next,
@@ -141,7 +142,7 @@ body {
     .swiper-button-prev {
         width: 35px;
         height: 35px;
-        background: rgba(0, 0, 0, 0.4);
+        /* background: rgba(0, 0, 0, 0.4); */
     }
 }
 
