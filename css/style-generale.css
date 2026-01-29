@@ -227,12 +227,6 @@ a.underline.hover-bianco:hover{
     padding-bottom: 0;
     transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease; 
 }
-.voci-header.expanded {
-    height: 300px;
-    opacity: 1;
-    padding-bottom: 1.5rem;
-    padding-top: 2rem;
-}
 .elenco-voci{
     display: flex;
     flex-direction: column;
@@ -440,9 +434,10 @@ a.underline.hover-bianco:hover{
 }
 
 .voci-header.expanded {
-    height: 300px;
+    height: 314px;
     opacity: 1;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
