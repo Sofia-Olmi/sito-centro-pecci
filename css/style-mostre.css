@@ -192,7 +192,7 @@ swiper-slide img {
 
 @media (max-width: 767px) {
  /* Spazio tra immagine e prima frase in mobile */
-    .bg-grigio img {
+    .bg-grigio .col-lg-8 img {
         margin-bottom: 1rem !important;
     }
 }
