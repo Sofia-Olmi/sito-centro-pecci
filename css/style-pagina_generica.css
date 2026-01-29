@@ -41,9 +41,9 @@
     }
     
     /* Padding per il contenuto mobile */
-    .mobile-content-padding {
+    /* .mobile-content-padding {
         padding: 0 15px;
-    }
+    } */
     
     /* Override Bootstrap breakpoints */
     /* Colonne mobile */
