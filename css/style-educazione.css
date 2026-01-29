@@ -38,10 +38,6 @@
     color: #ffffff;
 }
 
-h3{
-    text-transform: uppercase;
-}
-
 .icona-educazione {
     max-width: 322px;
     height: auto;
@@ -103,7 +99,6 @@ h3{
 .box-ricerca select {
     width: 100%;
     padding: 12px 50px 12px 20px;
-    font-size: 16px;
     color: #333;
     background-color: #fff;
     appearance: none;
