@@ -61,14 +61,6 @@
     }
     
     /* Rimuove spazi tra testi */
-    .titolo {
-        margin: 0 !important;
-    }
-    
-    .sottotitolo {
-        margin: 0 !important;
-    }
-    
     .underline {
         margin-top: 0.5rem !important;
         margin-bottom: 1rem !important;
@@ -80,18 +72,8 @@
     }
     
     /* Riduce spazi tra le frasi di testo */
-    .bg-grigio .sottotitolo {
-        margin-bottom: 0.3rem !important;
-        margin-top: 0 !important;
-    }
-    
     .bg-grigio br {
         display: none;
-    }
-    
-    .bg-grigio .titolo {
-        margin-top: 0.3rem !important;
-        margin-bottom: 0.3rem !important;
     }
     
     .bg-grigio .underline {

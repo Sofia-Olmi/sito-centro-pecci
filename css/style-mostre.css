@@ -33,24 +33,6 @@
     justify-content: center;
 }
 
-.titolo-cinema{
-    margin: 0 0 1rem 0 !important;
-    line-height: 1.1; 
-}
-
-.titoletto-cinema{
-    margin: 0 !important;
-    line-height: 1.2;
-}
-
-.sottotitolo-cinema{
-    line-height: 1.2; 
-}
-
-.testo-cinema{
-    line-height: 1.3; 
-}
-
 .underline {
     text-decoration: underline;
 }
@@ -167,14 +149,6 @@ swiper-slide img {
     }
     
     /* Rimuove spazi tra testi */
-    .titolo {
-        margin: 0 !important;
-    }
-    
-    .sottotitolo {
-        margin: 0 !important;
-    }
-    
     .underline {
         margin-top: 0.5rem !important;
         margin-bottom: 1rem !important;
@@ -186,18 +160,8 @@ swiper-slide img {
     }
     
     /* Riduce spazi tra le frasi di testo */
-    .bg-grigio .sottotitolo {
-        margin-bottom: 0.3rem !important;
-        margin-top: 0 !important;
-    }
-    
     .bg-grigio br {
         display: none;
-    }
-    
-    .bg-grigio .titolo {
-        margin-top: 0.3rem !important;
-        margin-bottom: 0.3rem !important;
     }
     
     .bg-grigio .underline {
