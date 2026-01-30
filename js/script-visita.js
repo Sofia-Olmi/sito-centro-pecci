@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const isMobile = window.innerWidth < 992;
 
         if (target.closest('.collapsible-header') === header) {
-            // Toggle this section
-            if (isMobile) {
-                if (section.classList.contains('open')) {
-                    section.classList.remove('open');
-                } else {
-                    closeAllSections(section);
-                    section.classList.add('open');
-                }
+            // Toggle this section (now works on all devices)
+            if (section.classList.contains('open')) {
+                section.classList.remove('open');
+            } else {
+                closeAllSections(section);
+                section.classList.add('open');
             }
         } else if (target.closest('.collapsible-content') === content) {
-            // Close this section when tapping content
+            // Close this section when tapping content (mobile only)
             if (isMobile) {
                 section.classList.remove('open');
             }
         }
     }
+
+    let justTouched = false;
 
     collapsibleSections.forEach(section => {
         const header = section.querySelector('.collapsible-header');
@@ -65,13 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (isTap(touchEndX, touchEndY, touchEndTime)) {
                 handleSectionInteraction(section, e.target);
+                justTouched = true;
+                setTimeout(() => { justTouched = false; }, 500);
             }
             // If it's a swipe, do nothing (don't close)
         });
 
-        // Click events for desktop
+        // Click events for all devices and window sizes
         header.addEventListener('click', function(e) {
-            if (window.innerWidth < 992) return;
+            if (justTouched) return;
             handleSectionInteraction(section, e.target);
         });
     });
