@@ -12,6 +12,7 @@
     padding: 15px 20px;
     transition: background-color 0.2s ease;
     width: fit-content;
+    cursor: pointer;
 }
 .bottone-prenota a {
     color: #ffffff;
